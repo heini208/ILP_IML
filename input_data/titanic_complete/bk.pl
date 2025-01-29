@@ -1,3 +1,22 @@
+:- style_check(-discontiguous).
+
+:- discontiguous pclass/2.
+:- discontiguous sex_male/2.
+:- discontiguous sex_female/2.
+:- discontiguous age/2.
+:- discontiguous sibsp/2.
+:- discontiguous parch/2.
+:- discontiguous fare/2.
+:- discontiguous embarked_c/2.
+:- discontiguous embarked_s/2.
+:- discontiguous embarked_q/2.
+:- discontiguous passenger/2.
+:- discontiguous child/2.
+:- discontiguous adult/2.
+:- discontiguous elderly/2.
+:- discontiguous low_fare/2.
+:- discontiguous high_fare/2.
+
 % pclass
 pclass(p1, 3.00).
 pclass(p10, 2.00).
@@ -891,898 +910,900 @@ pclass(p97, 1.00).
 pclass(p98, 1.00).
 pclass(p99, 2.00).
 
-% sex
-sex(p1, "male").
-sex(p10, "female").
-sex(p100, "male").
-sex(p101, "female").
-sex(p102, "male").
-sex(p103, "male").
-sex(p104, "male").
-sex(p105, "male").
-sex(p106, "male").
-sex(p107, "female").
-sex(p108, "male").
-sex(p109, "male").
-sex(p11, "female").
-sex(p110, "female").
-sex(p111, "male").
-sex(p112, "female").
-sex(p113, "male").
-sex(p114, "female").
-sex(p115, "female").
-sex(p116, "male").
-sex(p117, "male").
-sex(p118, "male").
-sex(p119, "male").
-sex(p12, "female").
-sex(p120, "female").
-sex(p121, "male").
-sex(p122, "male").
-sex(p123, "male").
-sex(p124, "female").
-sex(p125, "male").
-sex(p126, "male").
-sex(p127, "male").
-sex(p128, "male").
-sex(p129, "female").
-sex(p13, "male").
-sex(p130, "male").
-sex(p131, "male").
-sex(p132, "male").
-sex(p133, "female").
-sex(p134, "female").
-sex(p135, "male").
-sex(p136, "male").
-sex(p137, "female").
-sex(p138, "male").
-sex(p139, "male").
-sex(p14, "male").
-sex(p140, "male").
-sex(p141, "female").
-sex(p142, "female").
-sex(p143, "female").
-sex(p144, "male").
-sex(p145, "male").
-sex(p146, "male").
-sex(p147, "male").
-sex(p148, "female").
-sex(p149, "male").
-sex(p15, "female").
-sex(p150, "male").
-sex(p151, "male").
-sex(p152, "female").
-sex(p153, "male").
-sex(p154, "male").
-sex(p155, "male").
-sex(p156, "male").
-sex(p157, "female").
-sex(p158, "male").
-sex(p159, "male").
-sex(p16, "female").
-sex(p160, "male").
-sex(p161, "male").
-sex(p162, "female").
-sex(p163, "male").
-sex(p164, "male").
-sex(p165, "male").
-sex(p166, "male").
-sex(p167, "female").
-sex(p168, "female").
-sex(p169, "male").
-sex(p17, "male").
-sex(p170, "male").
-sex(p171, "male").
-sex(p172, "male").
-sex(p173, "female").
-sex(p174, "male").
-sex(p175, "male").
-sex(p176, "male").
-sex(p177, "male").
-sex(p178, "female").
-sex(p179, "male").
-sex(p18, "male").
-sex(p180, "male").
-sex(p181, "female").
-sex(p182, "male").
-sex(p183, "male").
-sex(p184, "male").
-sex(p185, "female").
-sex(p186, "male").
-sex(p187, "female").
-sex(p188, "male").
-sex(p189, "male").
-sex(p19, "female").
-sex(p190, "male").
-sex(p191, "female").
-sex(p192, "male").
-sex(p193, "female").
-sex(p194, "male").
-sex(p195, "female").
-sex(p196, "female").
-sex(p197, "male").
-sex(p198, "male").
-sex(p199, "female").
-sex(p2, "female").
-sex(p20, "female").
-sex(p200, "female").
-sex(p201, "male").
-sex(p202, "male").
-sex(p203, "male").
-sex(p204, "male").
-sex(p205, "male").
-sex(p206, "female").
-sex(p207, "male").
-sex(p208, "male").
-sex(p209, "female").
-sex(p21, "male").
-sex(p210, "male").
-sex(p211, "male").
-sex(p212, "female").
-sex(p213, "male").
-sex(p214, "male").
-sex(p215, "male").
-sex(p216, "female").
-sex(p217, "female").
-sex(p218, "male").
-sex(p219, "female").
-sex(p22, "male").
-sex(p220, "male").
-sex(p221, "male").
-sex(p222, "male").
-sex(p223, "male").
-sex(p224, "male").
-sex(p225, "male").
-sex(p226, "male").
-sex(p227, "male").
-sex(p228, "male").
-sex(p229, "male").
-sex(p23, "female").
-sex(p230, "female").
-sex(p231, "female").
-sex(p232, "male").
-sex(p233, "male").
-sex(p234, "female").
-sex(p235, "male").
-sex(p236, "female").
-sex(p237, "male").
-sex(p238, "female").
-sex(p239, "male").
-sex(p24, "male").
-sex(p240, "male").
-sex(p241, "female").
-sex(p242, "female").
-sex(p243, "male").
-sex(p244, "male").
-sex(p245, "male").
-sex(p246, "male").
-sex(p247, "female").
-sex(p248, "female").
-sex(p249, "male").
-sex(p25, "female").
-sex(p250, "male").
-sex(p251, "male").
-sex(p252, "female").
-sex(p253, "male").
-sex(p254, "male").
-sex(p255, "female").
-sex(p256, "female").
-sex(p257, "female").
-sex(p258, "female").
-sex(p259, "female").
-sex(p26, "female").
-sex(p260, "female").
-sex(p261, "male").
-sex(p262, "male").
-sex(p263, "male").
-sex(p264, "male").
-sex(p265, "female").
-sex(p266, "male").
-sex(p267, "male").
-sex(p268, "male").
-sex(p269, "female").
-sex(p27, "male").
-sex(p270, "female").
-sex(p271, "male").
-sex(p272, "male").
-sex(p273, "female").
-sex(p274, "male").
-sex(p275, "female").
-sex(p276, "female").
-sex(p277, "female").
-sex(p278, "male").
-sex(p279, "male").
-sex(p28, "male").
-sex(p280, "female").
-sex(p281, "male").
-sex(p282, "male").
-sex(p283, "male").
-sex(p284, "male").
-sex(p285, "male").
-sex(p286, "male").
-sex(p287, "male").
-sex(p288, "male").
-sex(p289, "male").
-sex(p29, "female").
-sex(p290, "female").
-sex(p291, "female").
-sex(p292, "female").
-sex(p293, "male").
-sex(p294, "female").
-sex(p295, "male").
-sex(p296, "male").
-sex(p297, "male").
-sex(p298, "female").
-sex(p299, "male").
-sex(p3, "female").
-sex(p30, "male").
-sex(p300, "female").
-sex(p301, "female").
-sex(p302, "male").
-sex(p303, "male").
-sex(p304, "female").
-sex(p305, "male").
-sex(p306, "male").
-sex(p307, "female").
-sex(p308, "female").
-sex(p309, "male").
-sex(p31, "male").
-sex(p310, "female").
-sex(p311, "female").
-sex(p312, "female").
-sex(p313, "female").
-sex(p314, "male").
-sex(p315, "male").
-sex(p316, "female").
-sex(p317, "female").
-sex(p318, "male").
-sex(p319, "female").
-sex(p32, "female").
-sex(p320, "female").
-sex(p321, "male").
-sex(p322, "male").
-sex(p323, "female").
-sex(p324, "female").
-sex(p325, "male").
-sex(p326, "female").
-sex(p327, "male").
-sex(p328, "female").
-sex(p329, "female").
-sex(p33, "female").
-sex(p330, "female").
-sex(p331, "female").
-sex(p332, "male").
-sex(p333, "male").
-sex(p334, "male").
-sex(p335, "female").
-sex(p336, "male").
-sex(p337, "male").
-sex(p338, "female").
-sex(p339, "male").
-sex(p34, "male").
-sex(p340, "male").
-sex(p341, "male").
-sex(p342, "female").
-sex(p343, "male").
-sex(p344, "male").
-sex(p345, "male").
-sex(p346, "female").
-sex(p347, "female").
-sex(p348, "female").
-sex(p349, "male").
-sex(p35, "male").
-sex(p350, "male").
-sex(p351, "male").
-sex(p352, "male").
-sex(p353, "male").
-sex(p354, "male").
-sex(p355, "male").
-sex(p356, "male").
-sex(p357, "female").
-sex(p358, "female").
-sex(p359, "female").
-sex(p36, "male").
-sex(p360, "female").
-sex(p361, "male").
-sex(p362, "male").
-sex(p363, "female").
-sex(p364, "male").
-sex(p365, "male").
-sex(p366, "male").
-sex(p367, "female").
-sex(p368, "female").
-sex(p369, "female").
-sex(p37, "male").
-sex(p370, "female").
-sex(p371, "male").
-sex(p372, "male").
-sex(p373, "male").
-sex(p374, "male").
-sex(p375, "female").
-sex(p376, "female").
-sex(p377, "female").
-sex(p378, "male").
-sex(p379, "male").
-sex(p38, "male").
-sex(p380, "male").
-sex(p381, "female").
-sex(p382, "female").
-sex(p383, "male").
-sex(p384, "female").
-sex(p385, "male").
-sex(p386, "male").
-sex(p387, "male").
-sex(p388, "female").
-sex(p389, "male").
-sex(p39, "female").
-sex(p390, "female").
-sex(p391, "male").
-sex(p392, "male").
-sex(p393, "male").
-sex(p394, "female").
-sex(p395, "female").
-sex(p396, "male").
-sex(p397, "female").
-sex(p398, "male").
-sex(p399, "male").
-sex(p4, "female").
-sex(p40, "female").
-sex(p400, "female").
-sex(p401, "male").
-sex(p402, "male").
-sex(p403, "female").
-sex(p404, "male").
-sex(p405, "female").
-sex(p406, "male").
-sex(p407, "male").
-sex(p408, "male").
-sex(p409, "male").
-sex(p41, "female").
-sex(p410, "female").
-sex(p411, "male").
-sex(p412, "male").
-sex(p413, "female").
-sex(p414, "male").
-sex(p415, "male").
-sex(p416, "female").
-sex(p417, "female").
-sex(p418, "female").
-sex(p419, "male").
-sex(p42, "female").
-sex(p420, "female").
-sex(p421, "male").
-sex(p422, "male").
-sex(p423, "male").
-sex(p424, "female").
-sex(p425, "male").
-sex(p426, "male").
-sex(p427, "female").
-sex(p428, "female").
-sex(p429, "male").
-sex(p43, "male").
-sex(p430, "male").
-sex(p431, "male").
-sex(p432, "female").
-sex(p433, "female").
-sex(p434, "male").
-sex(p435, "male").
-sex(p436, "female").
-sex(p437, "female").
-sex(p438, "female").
-sex(p439, "male").
-sex(p44, "female").
-sex(p440, "male").
-sex(p441, "female").
-sex(p442, "male").
-sex(p443, "male").
-sex(p444, "female").
-sex(p445, "male").
-sex(p446, "male").
-sex(p447, "female").
-sex(p448, "male").
-sex(p449, "female").
-sex(p45, "female").
-sex(p450, "male").
-sex(p451, "male").
-sex(p452, "male").
-sex(p453, "male").
-sex(p454, "male").
-sex(p455, "male").
-sex(p456, "male").
-sex(p457, "male").
-sex(p458, "female").
-sex(p459, "female").
-sex(p46, "male").
-sex(p460, "male").
-sex(p461, "male").
-sex(p462, "male").
-sex(p463, "male").
-sex(p464, "male").
-sex(p465, "male").
-sex(p466, "male").
-sex(p467, "male").
-sex(p468, "male").
-sex(p469, "male").
-sex(p47, "male").
-sex(p470, "female").
-sex(p471, "male").
-sex(p472, "male").
-sex(p473, "female").
-sex(p474, "female").
-sex(p475, "female").
-sex(p476, "male").
-sex(p477, "male").
-sex(p478, "male").
-sex(p479, "male").
-sex(p48, "female").
-sex(p480, "female").
-sex(p481, "male").
-sex(p482, "male").
-sex(p483, "male").
-sex(p484, "female").
-sex(p485, "male").
-sex(p486, "female").
-sex(p487, "female").
-sex(p488, "male").
-sex(p489, "male").
-sex(p49, "male").
-sex(p490, "male").
-sex(p491, "male").
-sex(p492, "male").
-sex(p493, "male").
-sex(p494, "male").
-sex(p495, "male").
-sex(p496, "male").
-sex(p497, "female").
-sex(p498, "male").
-sex(p499, "female").
-sex(p5, "male").
-sex(p50, "female").
-sex(p500, "male").
-sex(p501, "male").
-sex(p502, "female").
-sex(p503, "female").
-sex(p504, "female").
-sex(p505, "female").
-sex(p506, "male").
-sex(p507, "female").
-sex(p508, "male").
-sex(p509, "male").
-sex(p51, "male").
-sex(p510, "male").
-sex(p511, "male").
-sex(p512, "male").
-sex(p513, "male").
-sex(p514, "female").
-sex(p515, "male").
-sex(p516, "male").
-sex(p517, "female").
-sex(p518, "male").
-sex(p519, "female").
-sex(p52, "male").
-sex(p520, "male").
-sex(p521, "female").
-sex(p522, "male").
-sex(p523, "male").
-sex(p524, "female").
-sex(p525, "male").
-sex(p526, "male").
-sex(p527, "female").
-sex(p528, "male").
-sex(p529, "male").
-sex(p53, "female").
-sex(p530, "male").
-sex(p531, "female").
-sex(p532, "male").
-sex(p533, "male").
-sex(p534, "female").
-sex(p535, "female").
-sex(p536, "female").
-sex(p537, "male").
-sex(p538, "female").
-sex(p539, "male").
-sex(p54, "female").
-sex(p540, "female").
-sex(p541, "female").
-sex(p542, "female").
-sex(p543, "female").
-sex(p544, "male").
-sex(p545, "male").
-sex(p546, "male").
-sex(p547, "female").
-sex(p548, "male").
-sex(p549, "male").
-sex(p55, "male").
-sex(p550, "male").
-sex(p551, "male").
-sex(p552, "male").
-sex(p553, "male").
-sex(p554, "male").
-sex(p555, "female").
-sex(p556, "male").
-sex(p557, "female").
-sex(p558, "male").
-sex(p559, "female").
-sex(p56, "male").
-sex(p560, "female").
-sex(p561, "male").
-sex(p562, "male").
-sex(p563, "male").
-sex(p564, "male").
-sex(p565, "female").
-sex(p566, "male").
-sex(p567, "male").
-sex(p568, "female").
-sex(p569, "male").
-sex(p57, "female").
-sex(p570, "male").
-sex(p571, "male").
-sex(p572, "female").
-sex(p573, "male").
-sex(p574, "female").
-sex(p575, "male").
-sex(p576, "male").
-sex(p577, "female").
-sex(p578, "female").
-sex(p579, "female").
-sex(p58, "male").
-sex(p580, "male").
-sex(p581, "female").
-sex(p582, "female").
-sex(p583, "male").
-sex(p584, "male").
-sex(p585, "male").
-sex(p586, "female").
-sex(p587, "male").
-sex(p588, "male").
-sex(p589, "male").
-sex(p59, "female").
-sex(p590, "male").
-sex(p591, "male").
-sex(p592, "female").
-sex(p593, "male").
-sex(p594, "female").
-sex(p595, "male").
-sex(p596, "male").
-sex(p597, "female").
-sex(p598, "male").
-sex(p599, "male").
-sex(p6, "male").
-sex(p60, "male").
-sex(p600, "male").
-sex(p601, "female").
-sex(p602, "male").
-sex(p603, "male").
-sex(p604, "male").
-sex(p605, "male").
-sex(p606, "male").
-sex(p607, "male").
-sex(p608, "male").
-sex(p609, "female").
-sex(p61, "male").
-sex(p610, "female").
-sex(p611, "female").
-sex(p612, "male").
-sex(p613, "female").
-sex(p614, "male").
-sex(p615, "male").
-sex(p616, "female").
-sex(p617, "male").
-sex(p618, "female").
-sex(p619, "female").
-sex(p62, "female").
-sex(p620, "male").
-sex(p621, "male").
-sex(p622, "male").
-sex(p623, "male").
-sex(p624, "male").
-sex(p625, "male").
-sex(p626, "male").
-sex(p627, "male").
-sex(p628, "female").
-sex(p629, "male").
-sex(p63, "male").
-sex(p630, "male").
-sex(p631, "male").
-sex(p632, "male").
-sex(p633, "male").
-sex(p634, "male").
-sex(p635, "female").
-sex(p636, "female").
-sex(p637, "male").
-sex(p638, "male").
-sex(p639, "female").
-sex(p64, "male").
-sex(p640, "male").
-sex(p641, "male").
-sex(p642, "female").
-sex(p643, "female").
-sex(p644, "male").
-sex(p645, "female").
-sex(p646, "male").
-sex(p647, "male").
-sex(p648, "male").
-sex(p649, "male").
-sex(p65, "male").
-sex(p650, "female").
-sex(p651, "male").
-sex(p652, "female").
-sex(p653, "male").
-sex(p654, "female").
-sex(p655, "female").
-sex(p656, "male").
-sex(p657, "male").
-sex(p658, "female").
-sex(p659, "male").
-sex(p66, "male").
-sex(p660, "male").
-sex(p661, "male").
-sex(p662, "male").
-sex(p663, "male").
-sex(p664, "male").
-sex(p665, "male").
-sex(p666, "male").
-sex(p667, "male").
-sex(p668, "male").
-sex(p669, "male").
-sex(p67, "female").
-sex(p670, "female").
-sex(p671, "female").
-sex(p672, "male").
-sex(p673, "male").
-sex(p674, "male").
-sex(p675, "male").
-sex(p676, "male").
-sex(p677, "male").
-sex(p678, "female").
-sex(p679, "female").
-sex(p68, "male").
-sex(p680, "male").
-sex(p681, "female").
-sex(p682, "male").
-sex(p683, "male").
-sex(p684, "male").
-sex(p685, "male").
-sex(p686, "male").
-sex(p687, "male").
-sex(p688, "male").
-sex(p689, "male").
-sex(p69, "female").
-sex(p690, "female").
-sex(p691, "male").
-sex(p692, "female").
-sex(p693, "male").
-sex(p694, "male").
-sex(p695, "male").
-sex(p696, "male").
-sex(p697, "male").
-sex(p698, "female").
-sex(p699, "male").
-sex(p7, "male").
-sex(p70, "male").
-sex(p700, "male").
-sex(p701, "female").
-sex(p702, "male").
-sex(p703, "female").
-sex(p704, "male").
-sex(p705, "male").
-sex(p706, "male").
-sex(p707, "female").
-sex(p708, "male").
-sex(p709, "female").
-sex(p71, "male").
-sex(p710, "male").
-sex(p711, "female").
-sex(p712, "male").
-sex(p713, "male").
-sex(p714, "male").
-sex(p715, "male").
-sex(p716, "male").
-sex(p717, "female").
-sex(p718, "female").
-sex(p719, "male").
-sex(p72, "female").
-sex(p720, "male").
-sex(p721, "female").
-sex(p722, "male").
-sex(p723, "male").
-sex(p724, "male").
-sex(p725, "male").
-sex(p726, "male").
-sex(p727, "female").
-sex(p728, "female").
-sex(p729, "male").
-sex(p73, "male").
-sex(p730, "female").
-sex(p731, "female").
-sex(p732, "male").
-sex(p733, "male").
-sex(p734, "male").
-sex(p735, "male").
-sex(p736, "male").
-sex(p737, "female").
-sex(p738, "male").
-sex(p739, "male").
-sex(p74, "male").
-sex(p740, "male").
-sex(p741, "male").
-sex(p742, "male").
-sex(p743, "female").
-sex(p744, "male").
-sex(p745, "male").
-sex(p746, "male").
-sex(p747, "male").
-sex(p748, "female").
-sex(p749, "male").
-sex(p75, "male").
-sex(p750, "male").
-sex(p751, "female").
-sex(p752, "male").
-sex(p753, "male").
-sex(p754, "male").
-sex(p755, "female").
-sex(p756, "male").
-sex(p757, "male").
-sex(p758, "male").
-sex(p759, "male").
-sex(p76, "male").
-sex(p760, "female").
-sex(p761, "male").
-sex(p762, "male").
-sex(p763, "male").
-sex(p764, "female").
-sex(p765, "male").
-sex(p766, "female").
-sex(p767, "male").
-sex(p768, "female").
-sex(p769, "male").
-sex(p77, "male").
-sex(p770, "male").
-sex(p771, "male").
-sex(p772, "male").
-sex(p773, "female").
-sex(p774, "male").
-sex(p775, "female").
-sex(p776, "male").
-sex(p777, "male").
-sex(p778, "female").
-sex(p779, "male").
-sex(p78, "male").
-sex(p780, "female").
-sex(p781, "female").
-sex(p782, "female").
-sex(p783, "male").
-sex(p784, "male").
-sex(p785, "male").
-sex(p786, "male").
-sex(p787, "female").
-sex(p788, "male").
-sex(p789, "male").
-sex(p79, "male").
-sex(p790, "male").
-sex(p791, "male").
-sex(p792, "male").
-sex(p793, "female").
-sex(p794, "male").
-sex(p795, "male").
-sex(p796, "male").
-sex(p797, "female").
-sex(p798, "female").
-sex(p799, "male").
-sex(p8, "male").
-sex(p80, "female").
-sex(p800, "female").
-sex(p801, "male").
-sex(p802, "female").
-sex(p803, "male").
-sex(p804, "male").
-sex(p805, "male").
-sex(p806, "male").
-sex(p807, "male").
-sex(p808, "female").
-sex(p809, "male").
-sex(p81, "male").
-sex(p810, "female").
-sex(p811, "male").
-sex(p812, "male").
-sex(p813, "male").
-sex(p814, "female").
-sex(p815, "male").
-sex(p816, "male").
-sex(p817, "female").
-sex(p818, "male").
-sex(p819, "male").
-sex(p82, "male").
-sex(p820, "male").
-sex(p821, "female").
-sex(p822, "male").
-sex(p823, "male").
-sex(p824, "female").
-sex(p825, "male").
-sex(p826, "male").
-sex(p827, "male").
-sex(p828, "male").
-sex(p829, "male").
-sex(p83, "female").
-sex(p830, "female").
-sex(p831, "female").
-sex(p832, "male").
-sex(p833, "male").
-sex(p834, "male").
-sex(p835, "male").
-sex(p836, "female").
-sex(p837, "male").
-sex(p838, "male").
-sex(p839, "male").
-sex(p84, "male").
-sex(p840, "male").
-sex(p841, "male").
-sex(p842, "male").
-sex(p843, "female").
-sex(p844, "male").
-sex(p845, "male").
-sex(p846, "male").
-sex(p847, "male").
-sex(p848, "male").
-sex(p849, "male").
-sex(p85, "female").
-sex(p850, "female").
-sex(p851, "male").
-sex(p852, "male").
-sex(p853, "female").
-sex(p854, "female").
-sex(p855, "female").
-sex(p856, "female").
-sex(p857, "female").
-sex(p858, "male").
-sex(p859, "female").
-sex(p86, "female").
-sex(p860, "male").
-sex(p861, "male").
-sex(p862, "male").
-sex(p863, "female").
-sex(p864, "female").
-sex(p865, "male").
-sex(p866, "female").
-sex(p867, "female").
-sex(p868, "male").
-sex(p869, "male").
-sex(p87, "male").
-sex(p870, "male").
-sex(p871, "male").
-sex(p872, "female").
-sex(p873, "male").
-sex(p874, "male").
-sex(p875, "female").
-sex(p876, "female").
-sex(p877, "male").
-sex(p878, "male").
-sex(p879, "male").
-sex(p88, "male").
-sex(p880, "female").
-sex(p881, "female").
-sex(p882, "male").
-sex(p883, "female").
-sex(p884, "male").
-sex(p885, "male").
-sex(p886, "female").
-sex(p887, "male").
-sex(p888, "female").
-sex(p889, "female").
-sex(p89, "female").
-sex(p890, "male").
-sex(p891, "male").
-sex(p9, "female").
-sex(p90, "male").
-sex(p91, "male").
-sex(p92, "male").
-sex(p93, "male").
-sex(p94, "male").
-sex(p95, "male").
-sex(p96, "male").
-sex(p97, "male").
-sex(p98, "male").
-sex(p99, "female").
+% sex_male
+sex_male(p1).
+sex_male(p100).
+sex_male(p102).
+sex_male(p103).
+sex_male(p104).
+sex_male(p105).
+sex_male(p106).
+sex_male(p108).
+sex_male(p109).
+sex_male(p111).
+sex_male(p113).
+sex_male(p116).
+sex_male(p117).
+sex_male(p118).
+sex_male(p119).
+sex_male(p121).
+sex_male(p122).
+sex_male(p123).
+sex_male(p125).
+sex_male(p126).
+sex_male(p127).
+sex_male(p128).
+sex_male(p13).
+sex_male(p130).
+sex_male(p131).
+sex_male(p132).
+sex_male(p135).
+sex_male(p136).
+sex_male(p138).
+sex_male(p139).
+sex_male(p14).
+sex_male(p140).
+sex_male(p144).
+sex_male(p145).
+sex_male(p146).
+sex_male(p147).
+sex_male(p149).
+sex_male(p150).
+sex_male(p151).
+sex_male(p153).
+sex_male(p154).
+sex_male(p155).
+sex_male(p156).
+sex_male(p158).
+sex_male(p159).
+sex_male(p160).
+sex_male(p161).
+sex_male(p163).
+sex_male(p164).
+sex_male(p165).
+sex_male(p166).
+sex_male(p169).
+sex_male(p17).
+sex_male(p170).
+sex_male(p171).
+sex_male(p172).
+sex_male(p174).
+sex_male(p175).
+sex_male(p176).
+sex_male(p177).
+sex_male(p179).
+sex_male(p18).
+sex_male(p180).
+sex_male(p182).
+sex_male(p183).
+sex_male(p184).
+sex_male(p186).
+sex_male(p188).
+sex_male(p189).
+sex_male(p190).
+sex_male(p192).
+sex_male(p194).
+sex_male(p197).
+sex_male(p198).
+sex_male(p201).
+sex_male(p202).
+sex_male(p203).
+sex_male(p204).
+sex_male(p205).
+sex_male(p207).
+sex_male(p208).
+sex_male(p21).
+sex_male(p210).
+sex_male(p211).
+sex_male(p213).
+sex_male(p214).
+sex_male(p215).
+sex_male(p218).
+sex_male(p22).
+sex_male(p220).
+sex_male(p221).
+sex_male(p222).
+sex_male(p223).
+sex_male(p224).
+sex_male(p225).
+sex_male(p226).
+sex_male(p227).
+sex_male(p228).
+sex_male(p229).
+sex_male(p232).
+sex_male(p233).
+sex_male(p235).
+sex_male(p237).
+sex_male(p239).
+sex_male(p24).
+sex_male(p240).
+sex_male(p243).
+sex_male(p244).
+sex_male(p245).
+sex_male(p246).
+sex_male(p249).
+sex_male(p250).
+sex_male(p251).
+sex_male(p253).
+sex_male(p254).
+sex_male(p261).
+sex_male(p262).
+sex_male(p263).
+sex_male(p264).
+sex_male(p266).
+sex_male(p267).
+sex_male(p268).
+sex_male(p27).
+sex_male(p271).
+sex_male(p272).
+sex_male(p274).
+sex_male(p278).
+sex_male(p279).
+sex_male(p28).
+sex_male(p281).
+sex_male(p282).
+sex_male(p283).
+sex_male(p284).
+sex_male(p285).
+sex_male(p286).
+sex_male(p287).
+sex_male(p288).
+sex_male(p289).
+sex_male(p293).
+sex_male(p295).
+sex_male(p296).
+sex_male(p297).
+sex_male(p299).
+sex_male(p30).
+sex_male(p302).
+sex_male(p303).
+sex_male(p305).
+sex_male(p306).
+sex_male(p309).
+sex_male(p31).
+sex_male(p314).
+sex_male(p315).
+sex_male(p318).
+sex_male(p321).
+sex_male(p322).
+sex_male(p325).
+sex_male(p327).
+sex_male(p332).
+sex_male(p333).
+sex_male(p334).
+sex_male(p336).
+sex_male(p337).
+sex_male(p339).
+sex_male(p34).
+sex_male(p340).
+sex_male(p341).
+sex_male(p343).
+sex_male(p344).
+sex_male(p345).
+sex_male(p349).
+sex_male(p35).
+sex_male(p350).
+sex_male(p351).
+sex_male(p352).
+sex_male(p353).
+sex_male(p354).
+sex_male(p355).
+sex_male(p356).
+sex_male(p36).
+sex_male(p361).
+sex_male(p362).
+sex_male(p364).
+sex_male(p365).
+sex_male(p366).
+sex_male(p37).
+sex_male(p371).
+sex_male(p372).
+sex_male(p373).
+sex_male(p374).
+sex_male(p378).
+sex_male(p379).
+sex_male(p38).
+sex_male(p380).
+sex_male(p383).
+sex_male(p385).
+sex_male(p386).
+sex_male(p387).
+sex_male(p389).
+sex_male(p391).
+sex_male(p392).
+sex_male(p393).
+sex_male(p396).
+sex_male(p398).
+sex_male(p399).
+sex_male(p401).
+sex_male(p402).
+sex_male(p404).
+sex_male(p406).
+sex_male(p407).
+sex_male(p408).
+sex_male(p409).
+sex_male(p411).
+sex_male(p412).
+sex_male(p414).
+sex_male(p415).
+sex_male(p419).
+sex_male(p421).
+sex_male(p422).
+sex_male(p423).
+sex_male(p425).
+sex_male(p426).
+sex_male(p429).
+sex_male(p43).
+sex_male(p430).
+sex_male(p431).
+sex_male(p434).
+sex_male(p435).
+sex_male(p439).
+sex_male(p440).
+sex_male(p442).
+sex_male(p443).
+sex_male(p445).
+sex_male(p446).
+sex_male(p448).
+sex_male(p450).
+sex_male(p451).
+sex_male(p452).
+sex_male(p453).
+sex_male(p454).
+sex_male(p455).
+sex_male(p456).
+sex_male(p457).
+sex_male(p46).
+sex_male(p460).
+sex_male(p461).
+sex_male(p462).
+sex_male(p463).
+sex_male(p464).
+sex_male(p465).
+sex_male(p466).
+sex_male(p467).
+sex_male(p468).
+sex_male(p469).
+sex_male(p47).
+sex_male(p471).
+sex_male(p472).
+sex_male(p476).
+sex_male(p477).
+sex_male(p478).
+sex_male(p479).
+sex_male(p481).
+sex_male(p482).
+sex_male(p483).
+sex_male(p485).
+sex_male(p488).
+sex_male(p489).
+sex_male(p49).
+sex_male(p490).
+sex_male(p491).
+sex_male(p492).
+sex_male(p493).
+sex_male(p494).
+sex_male(p495).
+sex_male(p496).
+sex_male(p498).
+sex_male(p5).
+sex_male(p500).
+sex_male(p501).
+sex_male(p506).
+sex_male(p508).
+sex_male(p509).
+sex_male(p51).
+sex_male(p510).
+sex_male(p511).
+sex_male(p512).
+sex_male(p513).
+sex_male(p515).
+sex_male(p516).
+sex_male(p518).
+sex_male(p52).
+sex_male(p520).
+sex_male(p522).
+sex_male(p523).
+sex_male(p525).
+sex_male(p526).
+sex_male(p528).
+sex_male(p529).
+sex_male(p530).
+sex_male(p532).
+sex_male(p533).
+sex_male(p537).
+sex_male(p539).
+sex_male(p544).
+sex_male(p545).
+sex_male(p546).
+sex_male(p548).
+sex_male(p549).
+sex_male(p55).
+sex_male(p550).
+sex_male(p551).
+sex_male(p552).
+sex_male(p553).
+sex_male(p554).
+sex_male(p556).
+sex_male(p558).
+sex_male(p56).
+sex_male(p561).
+sex_male(p562).
+sex_male(p563).
+sex_male(p564).
+sex_male(p566).
+sex_male(p567).
+sex_male(p569).
+sex_male(p570).
+sex_male(p571).
+sex_male(p573).
+sex_male(p575).
+sex_male(p576).
+sex_male(p58).
+sex_male(p580).
+sex_male(p583).
+sex_male(p584).
+sex_male(p585).
+sex_male(p587).
+sex_male(p588).
+sex_male(p589).
+sex_male(p590).
+sex_male(p591).
+sex_male(p593).
+sex_male(p595).
+sex_male(p596).
+sex_male(p598).
+sex_male(p599).
+sex_male(p6).
+sex_male(p60).
+sex_male(p600).
+sex_male(p602).
+sex_male(p603).
+sex_male(p604).
+sex_male(p605).
+sex_male(p606).
+sex_male(p607).
+sex_male(p608).
+sex_male(p61).
+sex_male(p612).
+sex_male(p614).
+sex_male(p615).
+sex_male(p617).
+sex_male(p620).
+sex_male(p621).
+sex_male(p622).
+sex_male(p623).
+sex_male(p624).
+sex_male(p625).
+sex_male(p626).
+sex_male(p627).
+sex_male(p629).
+sex_male(p63).
+sex_male(p630).
+sex_male(p631).
+sex_male(p632).
+sex_male(p633).
+sex_male(p634).
+sex_male(p637).
+sex_male(p638).
+sex_male(p64).
+sex_male(p640).
+sex_male(p641).
+sex_male(p644).
+sex_male(p646).
+sex_male(p647).
+sex_male(p648).
+sex_male(p649).
+sex_male(p65).
+sex_male(p651).
+sex_male(p653).
+sex_male(p656).
+sex_male(p657).
+sex_male(p659).
+sex_male(p66).
+sex_male(p660).
+sex_male(p661).
+sex_male(p662).
+sex_male(p663).
+sex_male(p664).
+sex_male(p665).
+sex_male(p666).
+sex_male(p667).
+sex_male(p668).
+sex_male(p669).
+sex_male(p672).
+sex_male(p673).
+sex_male(p674).
+sex_male(p675).
+sex_male(p676).
+sex_male(p677).
+sex_male(p68).
+sex_male(p680).
+sex_male(p682).
+sex_male(p683).
+sex_male(p684).
+sex_male(p685).
+sex_male(p686).
+sex_male(p687).
+sex_male(p688).
+sex_male(p689).
+sex_male(p691).
+sex_male(p693).
+sex_male(p694).
+sex_male(p695).
+sex_male(p696).
+sex_male(p697).
+sex_male(p699).
+sex_male(p7).
+sex_male(p70).
+sex_male(p700).
+sex_male(p702).
+sex_male(p704).
+sex_male(p705).
+sex_male(p706).
+sex_male(p708).
+sex_male(p71).
+sex_male(p710).
+sex_male(p712).
+sex_male(p713).
+sex_male(p714).
+sex_male(p715).
+sex_male(p716).
+sex_male(p719).
+sex_male(p720).
+sex_male(p722).
+sex_male(p723).
+sex_male(p724).
+sex_male(p725).
+sex_male(p726).
+sex_male(p729).
+sex_male(p73).
+sex_male(p732).
+sex_male(p733).
+sex_male(p734).
+sex_male(p735).
+sex_male(p736).
+sex_male(p738).
+sex_male(p739).
+sex_male(p74).
+sex_male(p740).
+sex_male(p741).
+sex_male(p742).
+sex_male(p744).
+sex_male(p745).
+sex_male(p746).
+sex_male(p747).
+sex_male(p749).
+sex_male(p75).
+sex_male(p750).
+sex_male(p752).
+sex_male(p753).
+sex_male(p754).
+sex_male(p756).
+sex_male(p757).
+sex_male(p758).
+sex_male(p759).
+sex_male(p76).
+sex_male(p761).
+sex_male(p762).
+sex_male(p763).
+sex_male(p765).
+sex_male(p767).
+sex_male(p769).
+sex_male(p77).
+sex_male(p770).
+sex_male(p771).
+sex_male(p772).
+sex_male(p774).
+sex_male(p776).
+sex_male(p777).
+sex_male(p779).
+sex_male(p78).
+sex_male(p783).
+sex_male(p784).
+sex_male(p785).
+sex_male(p786).
+sex_male(p788).
+sex_male(p789).
+sex_male(p79).
+sex_male(p790).
+sex_male(p791).
+sex_male(p792).
+sex_male(p794).
+sex_male(p795).
+sex_male(p796).
+sex_male(p799).
+sex_male(p8).
+sex_male(p801).
+sex_male(p803).
+sex_male(p804).
+sex_male(p805).
+sex_male(p806).
+sex_male(p807).
+sex_male(p809).
+sex_male(p81).
+sex_male(p811).
+sex_male(p812).
+sex_male(p813).
+sex_male(p815).
+sex_male(p816).
+sex_male(p818).
+sex_male(p819).
+sex_male(p82).
+sex_male(p820).
+sex_male(p822).
+sex_male(p823).
+sex_male(p825).
+sex_male(p826).
+sex_male(p827).
+sex_male(p828).
+sex_male(p829).
+sex_male(p832).
+sex_male(p833).
+sex_male(p834).
+sex_male(p835).
+sex_male(p837).
+sex_male(p838).
+sex_male(p839).
+sex_male(p84).
+sex_male(p840).
+sex_male(p841).
+sex_male(p842).
+sex_male(p844).
+sex_male(p845).
+sex_male(p846).
+sex_male(p847).
+sex_male(p848).
+sex_male(p849).
+sex_male(p851).
+sex_male(p852).
+sex_male(p858).
+sex_male(p860).
+sex_male(p861).
+sex_male(p862).
+sex_male(p865).
+sex_male(p868).
+sex_male(p869).
+sex_male(p87).
+sex_male(p870).
+sex_male(p871).
+sex_male(p873).
+sex_male(p874).
+sex_male(p877).
+sex_male(p878).
+sex_male(p879).
+sex_male(p88).
+sex_male(p882).
+sex_male(p884).
+sex_male(p885).
+sex_male(p887).
+sex_male(p890).
+sex_male(p891).
+sex_male(p90).
+sex_male(p91).
+sex_male(p92).
+sex_male(p93).
+sex_male(p94).
+sex_male(p95).
+sex_male(p96).
+sex_male(p97).
+sex_male(p98).
+
+% sex_female
+sex_female(p10).
+sex_female(p101).
+sex_female(p107).
+sex_female(p11).
+sex_female(p110).
+sex_female(p112).
+sex_female(p114).
+sex_female(p115).
+sex_female(p12).
+sex_female(p120).
+sex_female(p124).
+sex_female(p129).
+sex_female(p133).
+sex_female(p134).
+sex_female(p137).
+sex_female(p141).
+sex_female(p142).
+sex_female(p143).
+sex_female(p148).
+sex_female(p15).
+sex_female(p152).
+sex_female(p157).
+sex_female(p16).
+sex_female(p162).
+sex_female(p167).
+sex_female(p168).
+sex_female(p173).
+sex_female(p178).
+sex_female(p181).
+sex_female(p185).
+sex_female(p187).
+sex_female(p19).
+sex_female(p191).
+sex_female(p193).
+sex_female(p195).
+sex_female(p196).
+sex_female(p199).
+sex_female(p2).
+sex_female(p20).
+sex_female(p200).
+sex_female(p206).
+sex_female(p209).
+sex_female(p212).
+sex_female(p216).
+sex_female(p217).
+sex_female(p219).
+sex_female(p23).
+sex_female(p230).
+sex_female(p231).
+sex_female(p234).
+sex_female(p236).
+sex_female(p238).
+sex_female(p241).
+sex_female(p242).
+sex_female(p247).
+sex_female(p248).
+sex_female(p25).
+sex_female(p252).
+sex_female(p255).
+sex_female(p256).
+sex_female(p257).
+sex_female(p258).
+sex_female(p259).
+sex_female(p26).
+sex_female(p260).
+sex_female(p265).
+sex_female(p269).
+sex_female(p270).
+sex_female(p273).
+sex_female(p275).
+sex_female(p276).
+sex_female(p277).
+sex_female(p280).
+sex_female(p29).
+sex_female(p290).
+sex_female(p291).
+sex_female(p292).
+sex_female(p294).
+sex_female(p298).
+sex_female(p3).
+sex_female(p300).
+sex_female(p301).
+sex_female(p304).
+sex_female(p307).
+sex_female(p308).
+sex_female(p310).
+sex_female(p311).
+sex_female(p312).
+sex_female(p313).
+sex_female(p316).
+sex_female(p317).
+sex_female(p319).
+sex_female(p32).
+sex_female(p320).
+sex_female(p323).
+sex_female(p324).
+sex_female(p326).
+sex_female(p328).
+sex_female(p329).
+sex_female(p33).
+sex_female(p330).
+sex_female(p331).
+sex_female(p335).
+sex_female(p338).
+sex_female(p342).
+sex_female(p346).
+sex_female(p347).
+sex_female(p348).
+sex_female(p357).
+sex_female(p358).
+sex_female(p359).
+sex_female(p360).
+sex_female(p363).
+sex_female(p367).
+sex_female(p368).
+sex_female(p369).
+sex_female(p370).
+sex_female(p375).
+sex_female(p376).
+sex_female(p377).
+sex_female(p381).
+sex_female(p382).
+sex_female(p384).
+sex_female(p388).
+sex_female(p39).
+sex_female(p390).
+sex_female(p394).
+sex_female(p395).
+sex_female(p397).
+sex_female(p4).
+sex_female(p40).
+sex_female(p400).
+sex_female(p403).
+sex_female(p405).
+sex_female(p41).
+sex_female(p410).
+sex_female(p413).
+sex_female(p416).
+sex_female(p417).
+sex_female(p418).
+sex_female(p42).
+sex_female(p420).
+sex_female(p424).
+sex_female(p427).
+sex_female(p428).
+sex_female(p432).
+sex_female(p433).
+sex_female(p436).
+sex_female(p437).
+sex_female(p438).
+sex_female(p44).
+sex_female(p441).
+sex_female(p444).
+sex_female(p447).
+sex_female(p449).
+sex_female(p45).
+sex_female(p458).
+sex_female(p459).
+sex_female(p470).
+sex_female(p473).
+sex_female(p474).
+sex_female(p475).
+sex_female(p48).
+sex_female(p480).
+sex_female(p484).
+sex_female(p486).
+sex_female(p487).
+sex_female(p497).
+sex_female(p499).
+sex_female(p50).
+sex_female(p502).
+sex_female(p503).
+sex_female(p504).
+sex_female(p505).
+sex_female(p507).
+sex_female(p514).
+sex_female(p517).
+sex_female(p519).
+sex_female(p521).
+sex_female(p524).
+sex_female(p527).
+sex_female(p53).
+sex_female(p531).
+sex_female(p534).
+sex_female(p535).
+sex_female(p536).
+sex_female(p538).
+sex_female(p54).
+sex_female(p540).
+sex_female(p541).
+sex_female(p542).
+sex_female(p543).
+sex_female(p547).
+sex_female(p555).
+sex_female(p557).
+sex_female(p559).
+sex_female(p560).
+sex_female(p565).
+sex_female(p568).
+sex_female(p57).
+sex_female(p572).
+sex_female(p574).
+sex_female(p577).
+sex_female(p578).
+sex_female(p579).
+sex_female(p581).
+sex_female(p582).
+sex_female(p586).
+sex_female(p59).
+sex_female(p592).
+sex_female(p594).
+sex_female(p597).
+sex_female(p601).
+sex_female(p609).
+sex_female(p610).
+sex_female(p611).
+sex_female(p613).
+sex_female(p616).
+sex_female(p618).
+sex_female(p619).
+sex_female(p62).
+sex_female(p628).
+sex_female(p635).
+sex_female(p636).
+sex_female(p639).
+sex_female(p642).
+sex_female(p643).
+sex_female(p645).
+sex_female(p650).
+sex_female(p652).
+sex_female(p654).
+sex_female(p655).
+sex_female(p658).
+sex_female(p67).
+sex_female(p670).
+sex_female(p671).
+sex_female(p678).
+sex_female(p679).
+sex_female(p681).
+sex_female(p69).
+sex_female(p690).
+sex_female(p692).
+sex_female(p698).
+sex_female(p701).
+sex_female(p703).
+sex_female(p707).
+sex_female(p709).
+sex_female(p711).
+sex_female(p717).
+sex_female(p718).
+sex_female(p72).
+sex_female(p721).
+sex_female(p727).
+sex_female(p728).
+sex_female(p730).
+sex_female(p731).
+sex_female(p737).
+sex_female(p743).
+sex_female(p748).
+sex_female(p751).
+sex_female(p755).
+sex_female(p760).
+sex_female(p764).
+sex_female(p766).
+sex_female(p768).
+sex_female(p773).
+sex_female(p775).
+sex_female(p778).
+sex_female(p780).
+sex_female(p781).
+sex_female(p782).
+sex_female(p787).
+sex_female(p793).
+sex_female(p797).
+sex_female(p798).
+sex_female(p80).
+sex_female(p800).
+sex_female(p802).
+sex_female(p808).
+sex_female(p810).
+sex_female(p814).
+sex_female(p817).
+sex_female(p821).
+sex_female(p824).
+sex_female(p83).
+sex_female(p830).
+sex_female(p831).
+sex_female(p836).
+sex_female(p843).
+sex_female(p85).
+sex_female(p850).
+sex_female(p853).
+sex_female(p854).
+sex_female(p855).
+sex_female(p856).
+sex_female(p857).
+sex_female(p859).
+sex_female(p86).
+sex_female(p863).
+sex_female(p864).
+sex_female(p866).
+sex_female(p867).
+sex_female(p872).
+sex_female(p875).
+sex_female(p876).
+sex_female(p880).
+sex_female(p881).
+sex_female(p883).
+sex_female(p886).
+sex_female(p888).
+sex_female(p889).
+sex_female(p89).
+sex_female(p9).
+sex_female(p99).
 
 % age
 age(p1, 22.00).
@@ -5179,898 +5200,900 @@ fare(p97, 34.65).
 fare(p98, 63.36).
 fare(p99, 23.00).
 
-% embarked
-embarked(p1, "S").
-embarked(p10, "C").
-embarked(p100, "S").
-embarked(p101, "S").
-embarked(p102, "S").
-embarked(p103, "S").
-embarked(p104, "S").
-embarked(p105, "S").
-embarked(p106, "S").
-embarked(p107, "S").
-embarked(p108, "S").
-embarked(p109, "S").
-embarked(p11, "S").
-embarked(p110, "Q").
-embarked(p111, "S").
-embarked(p112, "C").
-embarked(p113, "S").
-embarked(p114, "S").
-embarked(p115, "C").
-embarked(p116, "S").
-embarked(p117, "Q").
-embarked(p118, "S").
-embarked(p119, "C").
-embarked(p12, "S").
-embarked(p120, "S").
-embarked(p121, "S").
-embarked(p122, "S").
-embarked(p123, "C").
-embarked(p124, "S").
-embarked(p125, "S").
-embarked(p126, "C").
-embarked(p127, "Q").
-embarked(p128, "S").
-embarked(p129, "C").
-embarked(p13, "S").
-embarked(p130, "S").
-embarked(p131, "C").
-embarked(p132, "S").
-embarked(p133, "S").
-embarked(p134, "S").
-embarked(p135, "S").
-embarked(p136, "C").
-embarked(p137, "S").
-embarked(p138, "S").
-embarked(p139, "S").
-embarked(p14, "S").
-embarked(p140, "C").
-embarked(p141, "C").
-embarked(p142, "S").
-embarked(p143, "S").
-embarked(p144, "Q").
-embarked(p145, "S").
-embarked(p146, "S").
-embarked(p147, "S").
-embarked(p148, "S").
-embarked(p149, "S").
-embarked(p15, "S").
-embarked(p150, "S").
-embarked(p151, "S").
-embarked(p152, "S").
-embarked(p153, "S").
-embarked(p154, "S").
-embarked(p155, "S").
-embarked(p156, "C").
-embarked(p157, "Q").
-embarked(p158, "S").
-embarked(p159, "S").
-embarked(p16, "S").
-embarked(p160, "S").
-embarked(p161, "S").
-embarked(p162, "S").
-embarked(p163, "S").
-embarked(p164, "S").
-embarked(p165, "S").
-embarked(p166, "S").
-embarked(p167, "S").
-embarked(p168, "S").
-embarked(p169, "S").
-embarked(p17, "Q").
-embarked(p170, "S").
-embarked(p171, "S").
-embarked(p172, "Q").
-embarked(p173, "S").
-embarked(p174, "S").
-embarked(p175, "C").
-embarked(p176, "S").
-embarked(p177, "S").
-embarked(p178, "C").
-embarked(p179, "S").
-embarked(p18, "S").
-embarked(p180, "S").
-embarked(p181, "S").
-embarked(p182, "C").
-embarked(p183, "S").
-embarked(p184, "S").
-embarked(p185, "S").
-embarked(p186, "S").
-embarked(p187, "Q").
-embarked(p188, "S").
-embarked(p189, "Q").
-embarked(p19, "S").
-embarked(p190, "S").
-embarked(p191, "S").
-embarked(p192, "S").
-embarked(p193, "S").
-embarked(p194, "S").
-embarked(p195, "C").
-embarked(p196, "C").
-embarked(p197, "Q").
-embarked(p198, "S").
-embarked(p199, "Q").
-embarked(p2, "C").
-embarked(p20, "C").
-embarked(p200, "S").
-embarked(p201, "S").
-embarked(p202, "S").
-embarked(p203, "S").
-embarked(p204, "C").
-embarked(p205, "S").
-embarked(p206, "S").
-embarked(p207, "S").
-embarked(p208, "C").
-embarked(p209, "Q").
-embarked(p21, "S").
-embarked(p210, "C").
-embarked(p211, "S").
-embarked(p212, "S").
-embarked(p213, "S").
-embarked(p214, "S").
-embarked(p215, "Q").
-embarked(p216, "C").
-embarked(p217, "S").
-embarked(p218, "S").
-embarked(p219, "C").
-embarked(p22, "S").
-embarked(p220, "S").
-embarked(p221, "S").
-embarked(p222, "S").
-embarked(p223, "S").
-embarked(p224, "S").
-embarked(p225, "S").
-embarked(p226, "S").
-embarked(p227, "S").
-embarked(p228, "S").
-embarked(p229, "S").
-embarked(p23, "Q").
-embarked(p230, "S").
-embarked(p231, "S").
-embarked(p232, "S").
-embarked(p233, "S").
-embarked(p234, "S").
-embarked(p235, "S").
-embarked(p236, "S").
-embarked(p237, "S").
-embarked(p238, "S").
-embarked(p239, "S").
-embarked(p24, "S").
-embarked(p240, "S").
-embarked(p241, "C").
-embarked(p242, "Q").
-embarked(p243, "S").
-embarked(p244, "S").
-embarked(p245, "C").
-embarked(p246, "Q").
-embarked(p247, "S").
-embarked(p248, "S").
-embarked(p249, "S").
-embarked(p25, "S").
-embarked(p250, "S").
-embarked(p251, "S").
-embarked(p252, "S").
-embarked(p253, "S").
-embarked(p254, "S").
-embarked(p255, "S").
-embarked(p256, "C").
-embarked(p257, "C").
-embarked(p258, "S").
-embarked(p259, "C").
-embarked(p26, "S").
-embarked(p260, "S").
-embarked(p261, "Q").
-embarked(p262, "S").
-embarked(p263, "S").
-embarked(p264, "S").
-embarked(p265, "Q").
-embarked(p266, "S").
-embarked(p267, "S").
-embarked(p268, "S").
-embarked(p269, "S").
-embarked(p27, "C").
-embarked(p270, "S").
-embarked(p271, "S").
-embarked(p272, "S").
-embarked(p273, "S").
-embarked(p274, "C").
-embarked(p275, "Q").
-embarked(p276, "S").
-embarked(p277, "S").
-embarked(p278, "S").
-embarked(p279, "Q").
-embarked(p28, "S").
-embarked(p280, "S").
-embarked(p281, "Q").
-embarked(p282, "S").
-embarked(p283, "S").
-embarked(p284, "S").
-embarked(p285, "S").
-embarked(p286, "C").
-embarked(p287, "S").
-embarked(p288, "S").
-embarked(p289, "S").
-embarked(p29, "Q").
-embarked(p290, "Q").
-embarked(p291, "S").
-embarked(p292, "C").
-embarked(p293, "C").
-embarked(p294, "S").
-embarked(p295, "S").
-embarked(p296, "C").
-embarked(p297, "C").
-embarked(p298, "S").
-embarked(p299, "S").
-embarked(p3, "S").
-embarked(p30, "S").
-embarked(p300, "C").
-embarked(p301, "Q").
-embarked(p302, "Q").
-embarked(p303, "S").
-embarked(p304, "Q").
-embarked(p305, "S").
-embarked(p306, "S").
-embarked(p307, "C").
-embarked(p308, "C").
-embarked(p309, "C").
-embarked(p31, "C").
-embarked(p310, "C").
-embarked(p311, "C").
-embarked(p312, "C").
-embarked(p313, "S").
-embarked(p314, "S").
-embarked(p315, "S").
-embarked(p316, "S").
-embarked(p317, "S").
-embarked(p318, "S").
-embarked(p319, "S").
-embarked(p32, "C").
-embarked(p320, "C").
-embarked(p321, "S").
-embarked(p322, "S").
-embarked(p323, "Q").
-embarked(p324, "S").
-embarked(p325, "S").
-embarked(p326, "C").
-embarked(p327, "S").
-embarked(p328, "S").
-embarked(p329, "S").
-embarked(p33, "Q").
-embarked(p330, "C").
-embarked(p331, "Q").
-embarked(p332, "S").
-embarked(p333, "S").
-embarked(p334, "S").
-embarked(p335, "S").
-embarked(p336, "S").
-embarked(p337, "S").
-embarked(p338, "C").
-embarked(p339, "S").
-embarked(p34, "S").
-embarked(p340, "S").
-embarked(p341, "S").
-embarked(p342, "S").
-embarked(p343, "S").
-embarked(p344, "S").
-embarked(p345, "S").
-embarked(p346, "S").
-embarked(p347, "S").
-embarked(p348, "S").
-embarked(p349, "S").
-embarked(p35, "C").
-embarked(p350, "S").
-embarked(p351, "S").
-embarked(p352, "S").
-embarked(p353, "C").
-embarked(p354, "S").
-embarked(p355, "C").
-embarked(p356, "S").
-embarked(p357, "S").
-embarked(p358, "S").
-embarked(p359, "Q").
-embarked(p36, "S").
-embarked(p360, "Q").
-embarked(p361, "S").
-embarked(p362, "C").
-embarked(p363, "C").
-embarked(p364, "S").
-embarked(p365, "Q").
-embarked(p366, "S").
-embarked(p367, "C").
-embarked(p368, "C").
-embarked(p369, "Q").
-embarked(p37, "C").
-embarked(p370, "C").
-embarked(p371, "C").
-embarked(p372, "S").
-embarked(p373, "S").
-embarked(p374, "C").
-embarked(p375, "S").
-embarked(p376, "C").
-embarked(p377, "S").
-embarked(p378, "C").
-embarked(p379, "C").
-embarked(p38, "S").
-embarked(p380, "S").
-embarked(p381, "C").
-embarked(p382, "C").
-embarked(p383, "S").
-embarked(p384, "S").
-embarked(p385, "S").
-embarked(p386, "S").
-embarked(p387, "S").
-embarked(p388, "S").
-embarked(p389, "Q").
-embarked(p39, "S").
-embarked(p390, "C").
-embarked(p391, "S").
-embarked(p392, "S").
-embarked(p393, "S").
-embarked(p394, "C").
-embarked(p395, "S").
-embarked(p396, "S").
-embarked(p397, "S").
-embarked(p398, "S").
-embarked(p399, "S").
-embarked(p4, "S").
-embarked(p40, "C").
-embarked(p400, "S").
-embarked(p401, "S").
-embarked(p402, "S").
-embarked(p403, "S").
-embarked(p404, "S").
-embarked(p405, "S").
-embarked(p406, "S").
-embarked(p407, "S").
-embarked(p408, "S").
-embarked(p409, "S").
-embarked(p41, "S").
-embarked(p410, "S").
-embarked(p411, "S").
-embarked(p412, "Q").
-embarked(p413, "Q").
-embarked(p414, "S").
-embarked(p415, "S").
-embarked(p416, "S").
-embarked(p417, "S").
-embarked(p418, "S").
-embarked(p419, "S").
-embarked(p42, "S").
-embarked(p420, "S").
-embarked(p421, "C").
-embarked(p422, "Q").
-embarked(p423, "S").
-embarked(p424, "S").
-embarked(p425, "S").
-embarked(p426, "S").
-embarked(p427, "S").
-embarked(p428, "S").
-embarked(p429, "Q").
-embarked(p43, "C").
-embarked(p430, "S").
-embarked(p431, "S").
-embarked(p432, "S").
-embarked(p433, "S").
-embarked(p434, "S").
-embarked(p435, "S").
-embarked(p436, "S").
-embarked(p437, "S").
-embarked(p438, "S").
-embarked(p439, "S").
-embarked(p44, "C").
-embarked(p440, "S").
-embarked(p441, "S").
-embarked(p442, "S").
-embarked(p443, "S").
-embarked(p444, "S").
-embarked(p445, "S").
-embarked(p446, "S").
-embarked(p447, "S").
-embarked(p448, "S").
-embarked(p449, "C").
-embarked(p45, "Q").
-embarked(p450, "S").
-embarked(p451, "S").
-embarked(p452, "S").
-embarked(p453, "C").
-embarked(p454, "C").
-embarked(p455, "S").
-embarked(p456, "C").
-embarked(p457, "S").
-embarked(p458, "S").
-embarked(p459, "S").
-embarked(p46, "S").
-embarked(p460, "Q").
-embarked(p461, "S").
-embarked(p462, "S").
-embarked(p463, "S").
-embarked(p464, "S").
-embarked(p465, "S").
-embarked(p466, "S").
-embarked(p467, "S").
-embarked(p468, "S").
-embarked(p469, "Q").
-embarked(p47, "Q").
-embarked(p470, "C").
-embarked(p471, "S").
-embarked(p472, "S").
-embarked(p473, "S").
-embarked(p474, "C").
-embarked(p475, "S").
-embarked(p476, "S").
-embarked(p477, "S").
-embarked(p478, "S").
-embarked(p479, "S").
-embarked(p48, "Q").
-embarked(p480, "S").
-embarked(p481, "S").
-embarked(p482, "S").
-embarked(p483, "S").
-embarked(p484, "S").
-embarked(p485, "C").
-embarked(p486, "S").
-embarked(p487, "S").
-embarked(p488, "C").
-embarked(p489, "S").
-embarked(p49, "C").
-embarked(p490, "S").
-embarked(p491, "S").
-embarked(p492, "S").
-embarked(p493, "S").
-embarked(p494, "C").
-embarked(p495, "S").
-embarked(p496, "C").
-embarked(p497, "C").
-embarked(p498, "S").
-embarked(p499, "S").
-embarked(p5, "S").
-embarked(p50, "S").
-embarked(p500, "S").
-embarked(p501, "S").
-embarked(p502, "Q").
-embarked(p503, "Q").
-embarked(p504, "S").
-embarked(p505, "S").
-embarked(p506, "C").
-embarked(p507, "S").
-embarked(p508, "S").
-embarked(p509, "S").
-embarked(p51, "S").
-embarked(p510, "S").
-embarked(p511, "Q").
-embarked(p512, "S").
-embarked(p513, "S").
-embarked(p514, "C").
-embarked(p515, "S").
-embarked(p516, "S").
-embarked(p517, "S").
-embarked(p518, "Q").
-embarked(p519, "S").
-embarked(p52, "S").
-embarked(p520, "S").
-embarked(p521, "S").
-embarked(p522, "S").
-embarked(p523, "C").
-embarked(p524, "C").
-embarked(p525, "C").
-embarked(p526, "Q").
-embarked(p527, "S").
-embarked(p528, "S").
-embarked(p529, "S").
-embarked(p53, "C").
-embarked(p530, "S").
-embarked(p531, "S").
-embarked(p532, "C").
-embarked(p533, "C").
-embarked(p534, "C").
-embarked(p535, "S").
-embarked(p536, "S").
-embarked(p537, "S").
-embarked(p538, "C").
-embarked(p539, "S").
-embarked(p54, "S").
-embarked(p540, "C").
-embarked(p541, "S").
-embarked(p542, "S").
-embarked(p543, "S").
-embarked(p544, "S").
-embarked(p545, "C").
-embarked(p546, "S").
-embarked(p547, "S").
-embarked(p548, "C").
-embarked(p549, "S").
-embarked(p55, "C").
-embarked(p550, "S").
-embarked(p551, "C").
-embarked(p552, "S").
-embarked(p553, "Q").
-embarked(p554, "C").
-embarked(p555, "S").
-embarked(p556, "S").
-embarked(p557, "C").
-embarked(p558, "C").
-embarked(p559, "S").
-embarked(p56, "S").
-embarked(p560, "S").
-embarked(p561, "Q").
-embarked(p562, "S").
-embarked(p563, "S").
-embarked(p564, "S").
-embarked(p565, "S").
-embarked(p566, "S").
-embarked(p567, "S").
-embarked(p568, "S").
-embarked(p569, "C").
-embarked(p57, "S").
-embarked(p570, "S").
-embarked(p571, "S").
-embarked(p572, "S").
-embarked(p573, "S").
-embarked(p574, "Q").
-embarked(p575, "S").
-embarked(p576, "S").
-embarked(p577, "S").
-embarked(p578, "S").
-embarked(p579, "C").
-embarked(p58, "C").
-embarked(p580, "S").
-embarked(p581, "S").
-embarked(p582, "C").
-embarked(p583, "S").
-embarked(p584, "C").
-embarked(p585, "C").
-embarked(p586, "S").
-embarked(p587, "S").
-embarked(p588, "C").
-embarked(p589, "S").
-embarked(p59, "S").
-embarked(p590, "S").
-embarked(p591, "S").
-embarked(p592, "C").
-embarked(p593, "S").
-embarked(p594, "Q").
-embarked(p595, "S").
-embarked(p596, "S").
-embarked(p597, "S").
-embarked(p598, "S").
-embarked(p599, "C").
-embarked(p6, "Q").
-embarked(p60, "S").
-embarked(p600, "C").
-embarked(p601, "S").
-embarked(p602, "S").
-embarked(p603, "S").
-embarked(p604, "S").
-embarked(p605, "C").
-embarked(p606, "S").
-embarked(p607, "S").
-embarked(p608, "S").
-embarked(p609, "C").
-embarked(p61, "C").
-embarked(p610, "S").
-embarked(p611, "S").
-embarked(p612, "S").
-embarked(p613, "Q").
-embarked(p614, "Q").
-embarked(p615, "S").
-embarked(p616, "S").
-embarked(p617, "S").
-embarked(p618, "S").
-embarked(p619, "S").
-embarked(p62, "nan").
-embarked(p620, "S").
-embarked(p621, "C").
-embarked(p622, "S").
-embarked(p623, "C").
-embarked(p624, "S").
-embarked(p625, "S").
-embarked(p626, "S").
-embarked(p627, "Q").
-embarked(p628, "S").
-embarked(p629, "S").
-embarked(p63, "S").
-embarked(p630, "Q").
-embarked(p631, "S").
-embarked(p632, "S").
-embarked(p633, "C").
-embarked(p634, "S").
-embarked(p635, "S").
-embarked(p636, "S").
-embarked(p637, "S").
-embarked(p638, "S").
-embarked(p639, "S").
-embarked(p64, "S").
-embarked(p640, "S").
-embarked(p641, "S").
-embarked(p642, "C").
-embarked(p643, "S").
-embarked(p644, "S").
-embarked(p645, "C").
-embarked(p646, "C").
-embarked(p647, "S").
-embarked(p648, "C").
-embarked(p649, "S").
-embarked(p65, "C").
-embarked(p650, "S").
-embarked(p651, "S").
-embarked(p652, "S").
-embarked(p653, "S").
-embarked(p654, "Q").
-embarked(p655, "Q").
-embarked(p656, "S").
-embarked(p657, "S").
-embarked(p658, "Q").
-embarked(p659, "S").
-embarked(p66, "C").
-embarked(p660, "C").
-embarked(p661, "S").
-embarked(p662, "C").
-embarked(p663, "S").
-embarked(p664, "S").
-embarked(p665, "S").
-embarked(p666, "S").
-embarked(p667, "S").
-embarked(p668, "S").
-embarked(p669, "S").
-embarked(p67, "S").
-embarked(p670, "S").
-embarked(p671, "S").
-embarked(p672, "S").
-embarked(p673, "S").
-embarked(p674, "S").
-embarked(p675, "S").
-embarked(p676, "S").
-embarked(p677, "S").
-embarked(p678, "S").
-embarked(p679, "S").
-embarked(p68, "S").
-embarked(p680, "C").
-embarked(p681, "Q").
-embarked(p682, "C").
-embarked(p683, "S").
-embarked(p684, "S").
-embarked(p685, "S").
-embarked(p686, "C").
-embarked(p687, "S").
-embarked(p688, "S").
-embarked(p689, "S").
-embarked(p69, "S").
-embarked(p690, "S").
-embarked(p691, "S").
-embarked(p692, "C").
-embarked(p693, "S").
-embarked(p694, "C").
-embarked(p695, "S").
-embarked(p696, "S").
-embarked(p697, "S").
-embarked(p698, "Q").
-embarked(p699, "C").
-embarked(p7, "S").
-embarked(p70, "S").
-embarked(p700, "S").
-embarked(p701, "C").
-embarked(p702, "S").
-embarked(p703, "C").
-embarked(p704, "Q").
-embarked(p705, "S").
-embarked(p706, "S").
-embarked(p707, "S").
-embarked(p708, "S").
-embarked(p709, "S").
-embarked(p71, "S").
-embarked(p710, "C").
-embarked(p711, "C").
-embarked(p712, "S").
-embarked(p713, "S").
-embarked(p714, "S").
-embarked(p715, "S").
-embarked(p716, "S").
-embarked(p717, "C").
-embarked(p718, "S").
-embarked(p719, "Q").
-embarked(p72, "S").
-embarked(p720, "S").
-embarked(p721, "S").
-embarked(p722, "S").
-embarked(p723, "S").
-embarked(p724, "S").
-embarked(p725, "S").
-embarked(p726, "S").
-embarked(p727, "S").
-embarked(p728, "Q").
-embarked(p729, "S").
-embarked(p73, "S").
-embarked(p730, "S").
-embarked(p731, "S").
-embarked(p732, "C").
-embarked(p733, "S").
-embarked(p734, "S").
-embarked(p735, "S").
-embarked(p736, "S").
-embarked(p737, "S").
-embarked(p738, "C").
-embarked(p739, "S").
-embarked(p74, "C").
-embarked(p740, "S").
-embarked(p741, "S").
-embarked(p742, "S").
-embarked(p743, "C").
-embarked(p744, "S").
-embarked(p745, "S").
-embarked(p746, "S").
-embarked(p747, "S").
-embarked(p748, "S").
-embarked(p749, "S").
-embarked(p75, "S").
-embarked(p750, "Q").
-embarked(p751, "S").
-embarked(p752, "S").
-embarked(p753, "S").
-embarked(p754, "S").
-embarked(p755, "S").
-embarked(p756, "S").
-embarked(p757, "S").
-embarked(p758, "S").
-embarked(p759, "S").
-embarked(p76, "S").
-embarked(p760, "S").
-embarked(p761, "S").
-embarked(p762, "S").
-embarked(p763, "C").
-embarked(p764, "S").
-embarked(p765, "S").
-embarked(p766, "S").
-embarked(p767, "C").
-embarked(p768, "Q").
-embarked(p769, "Q").
-embarked(p77, "S").
-embarked(p770, "S").
-embarked(p771, "S").
-embarked(p772, "S").
-embarked(p773, "S").
-embarked(p774, "C").
-embarked(p775, "S").
-embarked(p776, "S").
-embarked(p777, "Q").
-embarked(p778, "S").
-embarked(p779, "Q").
-embarked(p78, "S").
-embarked(p780, "S").
-embarked(p781, "C").
-embarked(p782, "S").
-embarked(p783, "S").
-embarked(p784, "S").
-embarked(p785, "S").
-embarked(p786, "S").
-embarked(p787, "S").
-embarked(p788, "Q").
-embarked(p789, "S").
-embarked(p79, "S").
-embarked(p790, "C").
-embarked(p791, "Q").
-embarked(p792, "S").
-embarked(p793, "S").
-embarked(p794, "C").
-embarked(p795, "S").
-embarked(p796, "S").
-embarked(p797, "S").
-embarked(p798, "S").
-embarked(p799, "C").
-embarked(p8, "S").
-embarked(p80, "S").
-embarked(p800, "S").
-embarked(p801, "S").
-embarked(p802, "S").
-embarked(p803, "S").
-embarked(p804, "C").
-embarked(p805, "S").
-embarked(p806, "S").
-embarked(p807, "S").
-embarked(p808, "S").
-embarked(p809, "S").
-embarked(p81, "S").
-embarked(p810, "S").
-embarked(p811, "S").
-embarked(p812, "S").
-embarked(p813, "S").
-embarked(p814, "S").
-embarked(p815, "S").
-embarked(p816, "S").
-embarked(p817, "S").
-embarked(p818, "C").
-embarked(p819, "S").
-embarked(p82, "S").
-embarked(p820, "S").
-embarked(p821, "S").
-embarked(p822, "S").
-embarked(p823, "S").
-embarked(p824, "S").
-embarked(p825, "S").
-embarked(p826, "Q").
-embarked(p827, "S").
-embarked(p828, "C").
-embarked(p829, "Q").
-embarked(p83, "Q").
-embarked(p830, "nan").
-embarked(p831, "C").
-embarked(p832, "S").
-embarked(p833, "C").
-embarked(p834, "S").
-embarked(p835, "S").
-embarked(p836, "C").
-embarked(p837, "S").
-embarked(p838, "S").
-embarked(p839, "S").
-embarked(p84, "S").
-embarked(p840, "C").
-embarked(p841, "S").
-embarked(p842, "S").
-embarked(p843, "C").
-embarked(p844, "C").
-embarked(p845, "S").
-embarked(p846, "S").
-embarked(p847, "S").
-embarked(p848, "C").
-embarked(p849, "S").
-embarked(p85, "S").
-embarked(p850, "C").
-embarked(p851, "S").
-embarked(p852, "S").
-embarked(p853, "C").
-embarked(p854, "S").
-embarked(p855, "S").
-embarked(p856, "S").
-embarked(p857, "S").
-embarked(p858, "S").
-embarked(p859, "C").
-embarked(p86, "S").
-embarked(p860, "C").
-embarked(p861, "S").
-embarked(p862, "S").
-embarked(p863, "S").
-embarked(p864, "S").
-embarked(p865, "S").
-embarked(p866, "S").
-embarked(p867, "C").
-embarked(p868, "S").
-embarked(p869, "S").
-embarked(p87, "S").
-embarked(p870, "S").
-embarked(p871, "S").
-embarked(p872, "S").
-embarked(p873, "S").
-embarked(p874, "S").
-embarked(p875, "C").
-embarked(p876, "C").
-embarked(p877, "S").
-embarked(p878, "S").
-embarked(p879, "S").
-embarked(p88, "S").
-embarked(p880, "C").
-embarked(p881, "S").
-embarked(p882, "S").
-embarked(p883, "S").
-embarked(p884, "S").
-embarked(p885, "S").
-embarked(p886, "Q").
-embarked(p887, "S").
-embarked(p888, "S").
-embarked(p889, "S").
-embarked(p89, "S").
-embarked(p890, "C").
-embarked(p891, "Q").
-embarked(p9, "S").
-embarked(p90, "S").
-embarked(p91, "S").
-embarked(p92, "S").
-embarked(p93, "S").
-embarked(p94, "S").
-embarked(p95, "S").
-embarked(p96, "S").
-embarked(p97, "C").
-embarked(p98, "C").
-embarked(p99, "S").
+% embarked_c
+embarked_c(p10).
+embarked_c(p112).
+embarked_c(p115).
+embarked_c(p119).
+embarked_c(p123).
+embarked_c(p126).
+embarked_c(p129).
+embarked_c(p131).
+embarked_c(p136).
+embarked_c(p140).
+embarked_c(p141).
+embarked_c(p156).
+embarked_c(p175).
+embarked_c(p178).
+embarked_c(p182).
+embarked_c(p195).
+embarked_c(p196).
+embarked_c(p2).
+embarked_c(p20).
+embarked_c(p204).
+embarked_c(p208).
+embarked_c(p210).
+embarked_c(p216).
+embarked_c(p219).
+embarked_c(p241).
+embarked_c(p245).
+embarked_c(p256).
+embarked_c(p257).
+embarked_c(p259).
+embarked_c(p27).
+embarked_c(p274).
+embarked_c(p286).
+embarked_c(p292).
+embarked_c(p293).
+embarked_c(p296).
+embarked_c(p297).
+embarked_c(p300).
+embarked_c(p307).
+embarked_c(p308).
+embarked_c(p309).
+embarked_c(p31).
+embarked_c(p310).
+embarked_c(p311).
+embarked_c(p312).
+embarked_c(p32).
+embarked_c(p320).
+embarked_c(p326).
+embarked_c(p330).
+embarked_c(p338).
+embarked_c(p35).
+embarked_c(p353).
+embarked_c(p355).
+embarked_c(p362).
+embarked_c(p363).
+embarked_c(p367).
+embarked_c(p368).
+embarked_c(p37).
+embarked_c(p370).
+embarked_c(p371).
+embarked_c(p374).
+embarked_c(p376).
+embarked_c(p378).
+embarked_c(p379).
+embarked_c(p381).
+embarked_c(p382).
+embarked_c(p390).
+embarked_c(p394).
+embarked_c(p40).
+embarked_c(p421).
+embarked_c(p43).
+embarked_c(p44).
+embarked_c(p449).
+embarked_c(p453).
+embarked_c(p454).
+embarked_c(p456).
+embarked_c(p470).
+embarked_c(p474).
+embarked_c(p485).
+embarked_c(p488).
+embarked_c(p49).
+embarked_c(p494).
+embarked_c(p496).
+embarked_c(p497).
+embarked_c(p506).
+embarked_c(p514).
+embarked_c(p523).
+embarked_c(p524).
+embarked_c(p525).
+embarked_c(p53).
+embarked_c(p532).
+embarked_c(p533).
+embarked_c(p534).
+embarked_c(p538).
+embarked_c(p540).
+embarked_c(p545).
+embarked_c(p548).
+embarked_c(p55).
+embarked_c(p551).
+embarked_c(p554).
+embarked_c(p557).
+embarked_c(p558).
+embarked_c(p569).
+embarked_c(p579).
+embarked_c(p58).
+embarked_c(p582).
+embarked_c(p584).
+embarked_c(p585).
+embarked_c(p588).
+embarked_c(p592).
+embarked_c(p599).
+embarked_c(p600).
+embarked_c(p605).
+embarked_c(p609).
+embarked_c(p61).
+embarked_c(p621).
+embarked_c(p623).
+embarked_c(p633).
+embarked_c(p642).
+embarked_c(p645).
+embarked_c(p646).
+embarked_c(p648).
+embarked_c(p65).
+embarked_c(p66).
+embarked_c(p660).
+embarked_c(p662).
+embarked_c(p680).
+embarked_c(p682).
+embarked_c(p686).
+embarked_c(p692).
+embarked_c(p694).
+embarked_c(p699).
+embarked_c(p701).
+embarked_c(p703).
+embarked_c(p710).
+embarked_c(p711).
+embarked_c(p717).
+embarked_c(p732).
+embarked_c(p738).
+embarked_c(p74).
+embarked_c(p743).
+embarked_c(p763).
+embarked_c(p767).
+embarked_c(p774).
+embarked_c(p781).
+embarked_c(p790).
+embarked_c(p794).
+embarked_c(p799).
+embarked_c(p804).
+embarked_c(p818).
+embarked_c(p828).
+embarked_c(p831).
+embarked_c(p833).
+embarked_c(p836).
+embarked_c(p840).
+embarked_c(p843).
+embarked_c(p844).
+embarked_c(p848).
+embarked_c(p850).
+embarked_c(p853).
+embarked_c(p859).
+embarked_c(p860).
+embarked_c(p867).
+embarked_c(p875).
+embarked_c(p876).
+embarked_c(p880).
+embarked_c(p890).
+embarked_c(p97).
+embarked_c(p98).
+
+% embarked_s
+embarked_s(p1).
+embarked_s(p100).
+embarked_s(p101).
+embarked_s(p102).
+embarked_s(p103).
+embarked_s(p104).
+embarked_s(p105).
+embarked_s(p106).
+embarked_s(p107).
+embarked_s(p108).
+embarked_s(p109).
+embarked_s(p11).
+embarked_s(p111).
+embarked_s(p113).
+embarked_s(p114).
+embarked_s(p116).
+embarked_s(p118).
+embarked_s(p12).
+embarked_s(p120).
+embarked_s(p121).
+embarked_s(p122).
+embarked_s(p124).
+embarked_s(p125).
+embarked_s(p128).
+embarked_s(p13).
+embarked_s(p130).
+embarked_s(p132).
+embarked_s(p133).
+embarked_s(p134).
+embarked_s(p135).
+embarked_s(p137).
+embarked_s(p138).
+embarked_s(p139).
+embarked_s(p14).
+embarked_s(p142).
+embarked_s(p143).
+embarked_s(p145).
+embarked_s(p146).
+embarked_s(p147).
+embarked_s(p148).
+embarked_s(p149).
+embarked_s(p15).
+embarked_s(p150).
+embarked_s(p151).
+embarked_s(p152).
+embarked_s(p153).
+embarked_s(p154).
+embarked_s(p155).
+embarked_s(p158).
+embarked_s(p159).
+embarked_s(p16).
+embarked_s(p160).
+embarked_s(p161).
+embarked_s(p162).
+embarked_s(p163).
+embarked_s(p164).
+embarked_s(p165).
+embarked_s(p166).
+embarked_s(p167).
+embarked_s(p168).
+embarked_s(p169).
+embarked_s(p170).
+embarked_s(p171).
+embarked_s(p173).
+embarked_s(p174).
+embarked_s(p176).
+embarked_s(p177).
+embarked_s(p179).
+embarked_s(p18).
+embarked_s(p180).
+embarked_s(p181).
+embarked_s(p183).
+embarked_s(p184).
+embarked_s(p185).
+embarked_s(p186).
+embarked_s(p188).
+embarked_s(p19).
+embarked_s(p190).
+embarked_s(p191).
+embarked_s(p192).
+embarked_s(p193).
+embarked_s(p194).
+embarked_s(p198).
+embarked_s(p200).
+embarked_s(p201).
+embarked_s(p202).
+embarked_s(p203).
+embarked_s(p205).
+embarked_s(p206).
+embarked_s(p207).
+embarked_s(p21).
+embarked_s(p211).
+embarked_s(p212).
+embarked_s(p213).
+embarked_s(p214).
+embarked_s(p217).
+embarked_s(p218).
+embarked_s(p22).
+embarked_s(p220).
+embarked_s(p221).
+embarked_s(p222).
+embarked_s(p223).
+embarked_s(p224).
+embarked_s(p225).
+embarked_s(p226).
+embarked_s(p227).
+embarked_s(p228).
+embarked_s(p229).
+embarked_s(p230).
+embarked_s(p231).
+embarked_s(p232).
+embarked_s(p233).
+embarked_s(p234).
+embarked_s(p235).
+embarked_s(p236).
+embarked_s(p237).
+embarked_s(p238).
+embarked_s(p239).
+embarked_s(p24).
+embarked_s(p240).
+embarked_s(p243).
+embarked_s(p244).
+embarked_s(p247).
+embarked_s(p248).
+embarked_s(p249).
+embarked_s(p25).
+embarked_s(p250).
+embarked_s(p251).
+embarked_s(p252).
+embarked_s(p253).
+embarked_s(p254).
+embarked_s(p255).
+embarked_s(p258).
+embarked_s(p26).
+embarked_s(p260).
+embarked_s(p262).
+embarked_s(p263).
+embarked_s(p264).
+embarked_s(p266).
+embarked_s(p267).
+embarked_s(p268).
+embarked_s(p269).
+embarked_s(p270).
+embarked_s(p271).
+embarked_s(p272).
+embarked_s(p273).
+embarked_s(p276).
+embarked_s(p277).
+embarked_s(p278).
+embarked_s(p28).
+embarked_s(p280).
+embarked_s(p282).
+embarked_s(p283).
+embarked_s(p284).
+embarked_s(p285).
+embarked_s(p287).
+embarked_s(p288).
+embarked_s(p289).
+embarked_s(p291).
+embarked_s(p294).
+embarked_s(p295).
+embarked_s(p298).
+embarked_s(p299).
+embarked_s(p3).
+embarked_s(p30).
+embarked_s(p303).
+embarked_s(p305).
+embarked_s(p306).
+embarked_s(p313).
+embarked_s(p314).
+embarked_s(p315).
+embarked_s(p316).
+embarked_s(p317).
+embarked_s(p318).
+embarked_s(p319).
+embarked_s(p321).
+embarked_s(p322).
+embarked_s(p324).
+embarked_s(p325).
+embarked_s(p327).
+embarked_s(p328).
+embarked_s(p329).
+embarked_s(p332).
+embarked_s(p333).
+embarked_s(p334).
+embarked_s(p335).
+embarked_s(p336).
+embarked_s(p337).
+embarked_s(p339).
+embarked_s(p34).
+embarked_s(p340).
+embarked_s(p341).
+embarked_s(p342).
+embarked_s(p343).
+embarked_s(p344).
+embarked_s(p345).
+embarked_s(p346).
+embarked_s(p347).
+embarked_s(p348).
+embarked_s(p349).
+embarked_s(p350).
+embarked_s(p351).
+embarked_s(p352).
+embarked_s(p354).
+embarked_s(p356).
+embarked_s(p357).
+embarked_s(p358).
+embarked_s(p36).
+embarked_s(p361).
+embarked_s(p364).
+embarked_s(p366).
+embarked_s(p372).
+embarked_s(p373).
+embarked_s(p375).
+embarked_s(p377).
+embarked_s(p38).
+embarked_s(p380).
+embarked_s(p383).
+embarked_s(p384).
+embarked_s(p385).
+embarked_s(p386).
+embarked_s(p387).
+embarked_s(p388).
+embarked_s(p39).
+embarked_s(p391).
+embarked_s(p392).
+embarked_s(p393).
+embarked_s(p395).
+embarked_s(p396).
+embarked_s(p397).
+embarked_s(p398).
+embarked_s(p399).
+embarked_s(p4).
+embarked_s(p400).
+embarked_s(p401).
+embarked_s(p402).
+embarked_s(p403).
+embarked_s(p404).
+embarked_s(p405).
+embarked_s(p406).
+embarked_s(p407).
+embarked_s(p408).
+embarked_s(p409).
+embarked_s(p41).
+embarked_s(p410).
+embarked_s(p411).
+embarked_s(p414).
+embarked_s(p415).
+embarked_s(p416).
+embarked_s(p417).
+embarked_s(p418).
+embarked_s(p419).
+embarked_s(p42).
+embarked_s(p420).
+embarked_s(p423).
+embarked_s(p424).
+embarked_s(p425).
+embarked_s(p426).
+embarked_s(p427).
+embarked_s(p428).
+embarked_s(p430).
+embarked_s(p431).
+embarked_s(p432).
+embarked_s(p433).
+embarked_s(p434).
+embarked_s(p435).
+embarked_s(p436).
+embarked_s(p437).
+embarked_s(p438).
+embarked_s(p439).
+embarked_s(p440).
+embarked_s(p441).
+embarked_s(p442).
+embarked_s(p443).
+embarked_s(p444).
+embarked_s(p445).
+embarked_s(p446).
+embarked_s(p447).
+embarked_s(p448).
+embarked_s(p450).
+embarked_s(p451).
+embarked_s(p452).
+embarked_s(p455).
+embarked_s(p457).
+embarked_s(p458).
+embarked_s(p459).
+embarked_s(p46).
+embarked_s(p461).
+embarked_s(p462).
+embarked_s(p463).
+embarked_s(p464).
+embarked_s(p465).
+embarked_s(p466).
+embarked_s(p467).
+embarked_s(p468).
+embarked_s(p471).
+embarked_s(p472).
+embarked_s(p473).
+embarked_s(p475).
+embarked_s(p476).
+embarked_s(p477).
+embarked_s(p478).
+embarked_s(p479).
+embarked_s(p480).
+embarked_s(p481).
+embarked_s(p482).
+embarked_s(p483).
+embarked_s(p484).
+embarked_s(p486).
+embarked_s(p487).
+embarked_s(p489).
+embarked_s(p490).
+embarked_s(p491).
+embarked_s(p492).
+embarked_s(p493).
+embarked_s(p495).
+embarked_s(p498).
+embarked_s(p499).
+embarked_s(p5).
+embarked_s(p50).
+embarked_s(p500).
+embarked_s(p501).
+embarked_s(p504).
+embarked_s(p505).
+embarked_s(p507).
+embarked_s(p508).
+embarked_s(p509).
+embarked_s(p51).
+embarked_s(p510).
+embarked_s(p512).
+embarked_s(p513).
+embarked_s(p515).
+embarked_s(p516).
+embarked_s(p517).
+embarked_s(p519).
+embarked_s(p52).
+embarked_s(p520).
+embarked_s(p521).
+embarked_s(p522).
+embarked_s(p527).
+embarked_s(p528).
+embarked_s(p529).
+embarked_s(p530).
+embarked_s(p531).
+embarked_s(p535).
+embarked_s(p536).
+embarked_s(p537).
+embarked_s(p539).
+embarked_s(p54).
+embarked_s(p541).
+embarked_s(p542).
+embarked_s(p543).
+embarked_s(p544).
+embarked_s(p546).
+embarked_s(p547).
+embarked_s(p549).
+embarked_s(p550).
+embarked_s(p552).
+embarked_s(p555).
+embarked_s(p556).
+embarked_s(p559).
+embarked_s(p56).
+embarked_s(p560).
+embarked_s(p562).
+embarked_s(p563).
+embarked_s(p564).
+embarked_s(p565).
+embarked_s(p566).
+embarked_s(p567).
+embarked_s(p568).
+embarked_s(p57).
+embarked_s(p570).
+embarked_s(p571).
+embarked_s(p572).
+embarked_s(p573).
+embarked_s(p575).
+embarked_s(p576).
+embarked_s(p577).
+embarked_s(p578).
+embarked_s(p580).
+embarked_s(p581).
+embarked_s(p583).
+embarked_s(p586).
+embarked_s(p587).
+embarked_s(p589).
+embarked_s(p59).
+embarked_s(p590).
+embarked_s(p591).
+embarked_s(p593).
+embarked_s(p595).
+embarked_s(p596).
+embarked_s(p597).
+embarked_s(p598).
+embarked_s(p60).
+embarked_s(p601).
+embarked_s(p602).
+embarked_s(p603).
+embarked_s(p604).
+embarked_s(p606).
+embarked_s(p607).
+embarked_s(p608).
+embarked_s(p610).
+embarked_s(p611).
+embarked_s(p612).
+embarked_s(p615).
+embarked_s(p616).
+embarked_s(p617).
+embarked_s(p618).
+embarked_s(p619).
+embarked_s(p620).
+embarked_s(p622).
+embarked_s(p624).
+embarked_s(p625).
+embarked_s(p626).
+embarked_s(p628).
+embarked_s(p629).
+embarked_s(p63).
+embarked_s(p631).
+embarked_s(p632).
+embarked_s(p634).
+embarked_s(p635).
+embarked_s(p636).
+embarked_s(p637).
+embarked_s(p638).
+embarked_s(p639).
+embarked_s(p64).
+embarked_s(p640).
+embarked_s(p641).
+embarked_s(p643).
+embarked_s(p644).
+embarked_s(p647).
+embarked_s(p649).
+embarked_s(p650).
+embarked_s(p651).
+embarked_s(p652).
+embarked_s(p653).
+embarked_s(p656).
+embarked_s(p657).
+embarked_s(p659).
+embarked_s(p661).
+embarked_s(p663).
+embarked_s(p664).
+embarked_s(p665).
+embarked_s(p666).
+embarked_s(p667).
+embarked_s(p668).
+embarked_s(p669).
+embarked_s(p67).
+embarked_s(p670).
+embarked_s(p671).
+embarked_s(p672).
+embarked_s(p673).
+embarked_s(p674).
+embarked_s(p675).
+embarked_s(p676).
+embarked_s(p677).
+embarked_s(p678).
+embarked_s(p679).
+embarked_s(p68).
+embarked_s(p683).
+embarked_s(p684).
+embarked_s(p685).
+embarked_s(p687).
+embarked_s(p688).
+embarked_s(p689).
+embarked_s(p69).
+embarked_s(p690).
+embarked_s(p691).
+embarked_s(p693).
+embarked_s(p695).
+embarked_s(p696).
+embarked_s(p697).
+embarked_s(p7).
+embarked_s(p70).
+embarked_s(p700).
+embarked_s(p702).
+embarked_s(p705).
+embarked_s(p706).
+embarked_s(p707).
+embarked_s(p708).
+embarked_s(p709).
+embarked_s(p71).
+embarked_s(p712).
+embarked_s(p713).
+embarked_s(p714).
+embarked_s(p715).
+embarked_s(p716).
+embarked_s(p718).
+embarked_s(p72).
+embarked_s(p720).
+embarked_s(p721).
+embarked_s(p722).
+embarked_s(p723).
+embarked_s(p724).
+embarked_s(p725).
+embarked_s(p726).
+embarked_s(p727).
+embarked_s(p729).
+embarked_s(p73).
+embarked_s(p730).
+embarked_s(p731).
+embarked_s(p733).
+embarked_s(p734).
+embarked_s(p735).
+embarked_s(p736).
+embarked_s(p737).
+embarked_s(p739).
+embarked_s(p740).
+embarked_s(p741).
+embarked_s(p742).
+embarked_s(p744).
+embarked_s(p745).
+embarked_s(p746).
+embarked_s(p747).
+embarked_s(p748).
+embarked_s(p749).
+embarked_s(p75).
+embarked_s(p751).
+embarked_s(p752).
+embarked_s(p753).
+embarked_s(p754).
+embarked_s(p755).
+embarked_s(p756).
+embarked_s(p757).
+embarked_s(p758).
+embarked_s(p759).
+embarked_s(p76).
+embarked_s(p760).
+embarked_s(p761).
+embarked_s(p762).
+embarked_s(p764).
+embarked_s(p765).
+embarked_s(p766).
+embarked_s(p77).
+embarked_s(p770).
+embarked_s(p771).
+embarked_s(p772).
+embarked_s(p773).
+embarked_s(p775).
+embarked_s(p776).
+embarked_s(p778).
+embarked_s(p78).
+embarked_s(p780).
+embarked_s(p782).
+embarked_s(p783).
+embarked_s(p784).
+embarked_s(p785).
+embarked_s(p786).
+embarked_s(p787).
+embarked_s(p789).
+embarked_s(p79).
+embarked_s(p792).
+embarked_s(p793).
+embarked_s(p795).
+embarked_s(p796).
+embarked_s(p797).
+embarked_s(p798).
+embarked_s(p8).
+embarked_s(p80).
+embarked_s(p800).
+embarked_s(p801).
+embarked_s(p802).
+embarked_s(p803).
+embarked_s(p805).
+embarked_s(p806).
+embarked_s(p807).
+embarked_s(p808).
+embarked_s(p809).
+embarked_s(p81).
+embarked_s(p810).
+embarked_s(p811).
+embarked_s(p812).
+embarked_s(p813).
+embarked_s(p814).
+embarked_s(p815).
+embarked_s(p816).
+embarked_s(p817).
+embarked_s(p819).
+embarked_s(p82).
+embarked_s(p820).
+embarked_s(p821).
+embarked_s(p822).
+embarked_s(p823).
+embarked_s(p824).
+embarked_s(p825).
+embarked_s(p827).
+embarked_s(p832).
+embarked_s(p834).
+embarked_s(p835).
+embarked_s(p837).
+embarked_s(p838).
+embarked_s(p839).
+embarked_s(p84).
+embarked_s(p841).
+embarked_s(p842).
+embarked_s(p845).
+embarked_s(p846).
+embarked_s(p847).
+embarked_s(p849).
+embarked_s(p85).
+embarked_s(p851).
+embarked_s(p852).
+embarked_s(p854).
+embarked_s(p855).
+embarked_s(p856).
+embarked_s(p857).
+embarked_s(p858).
+embarked_s(p86).
+embarked_s(p861).
+embarked_s(p862).
+embarked_s(p863).
+embarked_s(p864).
+embarked_s(p865).
+embarked_s(p866).
+embarked_s(p868).
+embarked_s(p869).
+embarked_s(p87).
+embarked_s(p870).
+embarked_s(p871).
+embarked_s(p872).
+embarked_s(p873).
+embarked_s(p874).
+embarked_s(p877).
+embarked_s(p878).
+embarked_s(p879).
+embarked_s(p88).
+embarked_s(p881).
+embarked_s(p882).
+embarked_s(p883).
+embarked_s(p884).
+embarked_s(p885).
+embarked_s(p887).
+embarked_s(p888).
+embarked_s(p889).
+embarked_s(p89).
+embarked_s(p9).
+embarked_s(p90).
+embarked_s(p91).
+embarked_s(p92).
+embarked_s(p93).
+embarked_s(p94).
+embarked_s(p95).
+embarked_s(p96).
+embarked_s(p99).
+
+% embarked_q
+embarked_q(p110).
+embarked_q(p117).
+embarked_q(p127).
+embarked_q(p144).
+embarked_q(p157).
+embarked_q(p17).
+embarked_q(p172).
+embarked_q(p187).
+embarked_q(p189).
+embarked_q(p197).
+embarked_q(p199).
+embarked_q(p209).
+embarked_q(p215).
+embarked_q(p23).
+embarked_q(p242).
+embarked_q(p246).
+embarked_q(p261).
+embarked_q(p265).
+embarked_q(p275).
+embarked_q(p279).
+embarked_q(p281).
+embarked_q(p29).
+embarked_q(p290).
+embarked_q(p301).
+embarked_q(p302).
+embarked_q(p304).
+embarked_q(p323).
+embarked_q(p33).
+embarked_q(p331).
+embarked_q(p359).
+embarked_q(p360).
+embarked_q(p365).
+embarked_q(p369).
+embarked_q(p389).
+embarked_q(p412).
+embarked_q(p413).
+embarked_q(p422).
+embarked_q(p429).
+embarked_q(p45).
+embarked_q(p460).
+embarked_q(p469).
+embarked_q(p47).
+embarked_q(p48).
+embarked_q(p502).
+embarked_q(p503).
+embarked_q(p511).
+embarked_q(p518).
+embarked_q(p526).
+embarked_q(p553).
+embarked_q(p561).
+embarked_q(p574).
+embarked_q(p594).
+embarked_q(p6).
+embarked_q(p613).
+embarked_q(p614).
+embarked_q(p627).
+embarked_q(p630).
+embarked_q(p654).
+embarked_q(p655).
+embarked_q(p658).
+embarked_q(p681).
+embarked_q(p698).
+embarked_q(p704).
+embarked_q(p719).
+embarked_q(p728).
+embarked_q(p750).
+embarked_q(p768).
+embarked_q(p769).
+embarked_q(p777).
+embarked_q(p779).
+embarked_q(p788).
+embarked_q(p791).
+embarked_q(p826).
+embarked_q(p829).
+embarked_q(p83).
+embarked_q(p886).
+embarked_q(p891).
 
 % passenger
 passenger(p1).
@@ -6964,4 +6987,1619 @@ passenger(p96).
 passenger(p97).
 passenger(p98).
 passenger(p99).
+
+% child
+child(p10).
+child(p11).
+child(p112).
+child(p115).
+child(p120).
+child(p126).
+child(p139).
+child(p148).
+child(p15).
+child(p157).
+child(p164).
+child(p165).
+child(p166).
+child(p17).
+child(p172).
+child(p173).
+child(p183).
+child(p184).
+child(p185).
+child(p194).
+child(p206).
+child(p209).
+child(p221).
+child(p23).
+child(p234).
+child(p238).
+child(p25).
+child(p262).
+child(p267).
+child(p279).
+child(p283).
+child(p298).
+child(p306).
+child(p308).
+child(p330).
+child(p334).
+child(p341).
+child(p349).
+child(p353).
+child(p375).
+child(p382).
+child(p387).
+child(p390).
+child(p40).
+child(p408).
+child(p420).
+child(p434).
+child(p436).
+child(p44).
+child(p446).
+child(p447).
+child(p449).
+child(p470).
+child(p480).
+child(p481).
+child(p490).
+child(p501).
+child(p505).
+child(p51).
+child(p531).
+child(p533).
+child(p536).
+child(p542).
+child(p543).
+child(p550).
+child(p551).
+child(p575).
+child(p59).
+child(p60).
+child(p619).
+child(p635).
+child(p64).
+child(p643).
+child(p645).
+child(p684).
+child(p687).
+child(p69).
+child(p690).
+child(p692).
+child(p72).
+child(p721).
+child(p722).
+child(p732).
+child(p747).
+child(p751).
+child(p752).
+child(p756).
+child(p765).
+child(p778).
+child(p781).
+child(p782).
+child(p788).
+child(p789).
+child(p79).
+child(p792).
+child(p8).
+child(p803).
+child(p804).
+child(p814).
+child(p820).
+child(p825).
+child(p828).
+child(p831).
+child(p832).
+child(p842).
+child(p845).
+child(p85).
+child(p851).
+child(p853).
+child(p854).
+child(p87).
+child(p870).
+child(p876).
+
+% adult
+adult(p1).
+adult(p100).
+adult(p101).
+adult(p103).
+adult(p104).
+adult(p105).
+adult(p106).
+adult(p107).
+adult(p109).
+adult(p111).
+adult(p113).
+adult(p114).
+adult(p116).
+adult(p118).
+adult(p119).
+adult(p12).
+adult(p121).
+adult(p123).
+adult(p124).
+adult(p125).
+adult(p128).
+adult(p13).
+adult(p130).
+adult(p131).
+adult(p132).
+adult(p133).
+adult(p134).
+adult(p135).
+adult(p136).
+adult(p137).
+adult(p138).
+adult(p14).
+adult(p140).
+adult(p142).
+adult(p143).
+adult(p144).
+adult(p145).
+adult(p146).
+adult(p147).
+adult(p149).
+adult(p150).
+adult(p151).
+adult(p152).
+adult(p153).
+adult(p154).
+adult(p156).
+adult(p158).
+adult(p16).
+adult(p161).
+adult(p162).
+adult(p163).
+adult(p168).
+adult(p170).
+adult(p171).
+adult(p174).
+adult(p175).
+adult(p176).
+adult(p178).
+adult(p179).
+adult(p180).
+adult(p188).
+adult(p189).
+adult(p19).
+adult(p190).
+adult(p191).
+adult(p192).
+adult(p193).
+adult(p195).
+adult(p196).
+adult(p198).
+adult(p2).
+adult(p200).
+adult(p201).
+adult(p203).
+adult(p204).
+adult(p205).
+adult(p207).
+adult(p208).
+adult(p21).
+adult(p210).
+adult(p211).
+adult(p212).
+adult(p213).
+adult(p214).
+adult(p216).
+adult(p217).
+adult(p218).
+adult(p219).
+adult(p22).
+adult(p220).
+adult(p222).
+adult(p223).
+adult(p225).
+adult(p226).
+adult(p227).
+adult(p228).
+adult(p229).
+adult(p231).
+adult(p232).
+adult(p233).
+adult(p235).
+adult(p237).
+adult(p239).
+adult(p24).
+adult(p240).
+adult(p243).
+adult(p244).
+adult(p245).
+adult(p246).
+adult(p247).
+adult(p248).
+adult(p249).
+adult(p250).
+adult(p252).
+adult(p253).
+adult(p254).
+adult(p255).
+adult(p256).
+adult(p258).
+adult(p259).
+adult(p26).
+adult(p260).
+adult(p263).
+adult(p264).
+adult(p266).
+adult(p268).
+adult(p269).
+adult(p270).
+adult(p272).
+adult(p273).
+adult(p274).
+adult(p276).
+adult(p277).
+adult(p28).
+adult(p280).
+adult(p282).
+adult(p284).
+adult(p286).
+adult(p287).
+adult(p288).
+adult(p289).
+adult(p290).
+adult(p291).
+adult(p292).
+adult(p293).
+adult(p294).
+adult(p295).
+adult(p297).
+adult(p3).
+adult(p300).
+adult(p303).
+adult(p309).
+adult(p31).
+adult(p310).
+adult(p311).
+adult(p312).
+adult(p313).
+adult(p314).
+adult(p315).
+adult(p316).
+adult(p317).
+adult(p318).
+adult(p319).
+adult(p320).
+adult(p321).
+adult(p322).
+adult(p323).
+adult(p324).
+adult(p326).
+adult(p327).
+adult(p328).
+adult(p329).
+adult(p332).
+adult(p333).
+adult(p337).
+adult(p338).
+adult(p339).
+adult(p340).
+adult(p342).
+adult(p343).
+adult(p344).
+adult(p345).
+adult(p346).
+adult(p347).
+adult(p35).
+adult(p350).
+adult(p351).
+adult(p354).
+adult(p356).
+adult(p357).
+adult(p358).
+adult(p36).
+adult(p361).
+adult(p362).
+adult(p363).
+adult(p364).
+adult(p366).
+adult(p367).
+adult(p370).
+adult(p371).
+adult(p372).
+adult(p373).
+adult(p374).
+adult(p377).
+adult(p378).
+adult(p379).
+adult(p38).
+adult(p380).
+adult(p381).
+adult(p383).
+adult(p384).
+adult(p386).
+adult(p388).
+adult(p39).
+adult(p391).
+adult(p392).
+adult(p393).
+adult(p394).
+adult(p395).
+adult(p396).
+adult(p397).
+adult(p398).
+adult(p399).
+adult(p4).
+adult(p400).
+adult(p401).
+adult(p402).
+adult(p403).
+adult(p404).
+adult(p405).
+adult(p406).
+adult(p407).
+adult(p409).
+adult(p41).
+adult(p413).
+adult(p415).
+adult(p417).
+adult(p418).
+adult(p419).
+adult(p42).
+adult(p422).
+adult(p423).
+adult(p424).
+adult(p425).
+adult(p427).
+adult(p428).
+adult(p430).
+adult(p431).
+adult(p433).
+adult(p435).
+adult(p437).
+adult(p438).
+adult(p439).
+adult(p440).
+adult(p441).
+adult(p442).
+adult(p443).
+adult(p444).
+adult(p448).
+adult(p45).
+adult(p450).
+adult(p451).
+adult(p453).
+adult(p454).
+adult(p456).
+adult(p459).
+adult(p461).
+adult(p462).
+adult(p463).
+adult(p464).
+adult(p466).
+adult(p468).
+adult(p472).
+adult(p473).
+adult(p474).
+adult(p475).
+adult(p477).
+adult(p478).
+adult(p479).
+adult(p483).
+adult(p484).
+adult(p485).
+adult(p487).
+adult(p488).
+adult(p489).
+adult(p492).
+adult(p493).
+adult(p495).
+adult(p497).
+adult(p499).
+adult(p5).
+adult(p50).
+adult(p500).
+adult(p502).
+adult(p504).
+adult(p506).
+adult(p507).
+adult(p509).
+adult(p510).
+adult(p511).
+adult(p513).
+adult(p514).
+adult(p515).
+adult(p516).
+adult(p517).
+adult(p519).
+adult(p52).
+adult(p520).
+adult(p521).
+adult(p522).
+adult(p524).
+adult(p526).
+adult(p527).
+adult(p529).
+adult(p53).
+adult(p530).
+adult(p535).
+adult(p537).
+adult(p538).
+adult(p54).
+adult(p540).
+adult(p541).
+adult(p544).
+adult(p545).
+adult(p546).
+adult(p547).
+adult(p549).
+adult(p552).
+adult(p554).
+adult(p555).
+adult(p556).
+adult(p557).
+adult(p559).
+adult(p560).
+adult(p562).
+adult(p563).
+adult(p566).
+adult(p567).
+adult(p568).
+adult(p57).
+adult(p570).
+adult(p571).
+adult(p572).
+adult(p573).
+adult(p576).
+adult(p577).
+adult(p578).
+adult(p58).
+adult(p580).
+adult(p581).
+adult(p582).
+adult(p583).
+adult(p584).
+adult(p586).
+adult(p587).
+adult(p588).
+adult(p589).
+adult(p591).
+adult(p592).
+adult(p593).
+adult(p595).
+adult(p596).
+adult(p598).
+adult(p600).
+adult(p601).
+adult(p604).
+adult(p605).
+adult(p606).
+adult(p607).
+adult(p608).
+adult(p609).
+adult(p61).
+adult(p610).
+adult(p611).
+adult(p615).
+adult(p616).
+adult(p617).
+adult(p618).
+adult(p62).
+adult(p620).
+adult(p621).
+adult(p622).
+adult(p623).
+adult(p624).
+adult(p625).
+adult(p626).
+adult(p627).
+adult(p628).
+adult(p629).
+adult(p63).
+adult(p632).
+adult(p633).
+adult(p636).
+adult(p637).
+adult(p638).
+adult(p639).
+adult(p641).
+adult(p642).
+adult(p646).
+adult(p647).
+adult(p648).
+adult(p650).
+adult(p652).
+adult(p653).
+adult(p655).
+adult(p656).
+adult(p658).
+adult(p659).
+adult(p660).
+adult(p661).
+adult(p662).
+adult(p663).
+adult(p664).
+adult(p665).
+adult(p666).
+adult(p667).
+adult(p669).
+adult(p67).
+adult(p671).
+adult(p672).
+adult(p674).
+adult(p676).
+adult(p677).
+adult(p678).
+adult(p679).
+adult(p68).
+adult(p680).
+adult(p682).
+adult(p683).
+adult(p685).
+adult(p686).
+adult(p688).
+adult(p689).
+adult(p691).
+adult(p694).
+adult(p695).
+adult(p696).
+adult(p697).
+adult(p699).
+adult(p7).
+adult(p70).
+adult(p700).
+adult(p701).
+adult(p702).
+adult(p703).
+adult(p704).
+adult(p705).
+adult(p706).
+adult(p707).
+adult(p708).
+adult(p709).
+adult(p71).
+adult(p711).
+adult(p713).
+adult(p714).
+adult(p715).
+adult(p716).
+adult(p717).
+adult(p718).
+adult(p720).
+adult(p723).
+adult(p724).
+adult(p725).
+adult(p726).
+adult(p727).
+adult(p729).
+adult(p73).
+adult(p730).
+adult(p731).
+adult(p734).
+adult(p735).
+adult(p736).
+adult(p737).
+adult(p738).
+adult(p74).
+adult(p742).
+adult(p743).
+adult(p744).
+adult(p745).
+adult(p748).
+adult(p749).
+adult(p75).
+adult(p750).
+adult(p753).
+adult(p754).
+adult(p755).
+adult(p757).
+adult(p758).
+adult(p759).
+adult(p76).
+adult(p760).
+adult(p762).
+adult(p763).
+adult(p764).
+adult(p766).
+adult(p768).
+adult(p770).
+adult(p771).
+adult(p772).
+adult(p773).
+adult(p775).
+adult(p776).
+adult(p780).
+adult(p783).
+adult(p785).
+adult(p786).
+adult(p787).
+adult(p790).
+adult(p795).
+adult(p796).
+adult(p797).
+adult(p798).
+adult(p799).
+adult(p80).
+adult(p800).
+adult(p801).
+adult(p802).
+adult(p805).
+adult(p806).
+adult(p807).
+adult(p808).
+adult(p809).
+adult(p81).
+adult(p810).
+adult(p811).
+adult(p812).
+adult(p813).
+adult(p815).
+adult(p817).
+adult(p818).
+adult(p819).
+adult(p82).
+adult(p821).
+adult(p822).
+adult(p823).
+adult(p824).
+adult(p830).
+adult(p834).
+adult(p835).
+adult(p836).
+adult(p837).
+adult(p839).
+adult(p84).
+adult(p841).
+adult(p843).
+adult(p844).
+adult(p846).
+adult(p848).
+adult(p849).
+adult(p855).
+adult(p856).
+adult(p857).
+adult(p858).
+adult(p859).
+adult(p86).
+adult(p861).
+adult(p862).
+adult(p863).
+adult(p865).
+adult(p866).
+adult(p867).
+adult(p868).
+adult(p871).
+adult(p872).
+adult(p873).
+adult(p874).
+adult(p875).
+adult(p877).
+adult(p878).
+adult(p880).
+adult(p881).
+adult(p882).
+adult(p883).
+adult(p884).
+adult(p885).
+adult(p886).
+adult(p887).
+adult(p888).
+adult(p89).
+adult(p890).
+adult(p891).
+adult(p9).
+adult(p90).
+adult(p91).
+adult(p92).
+adult(p93).
+adult(p94).
+adult(p95).
+adult(p98).
+adult(p99).
+
+% elderly
+elderly(p117).
+elderly(p281).
+elderly(p34).
+elderly(p457).
+elderly(p494).
+elderly(p55).
+elderly(p631).
+elderly(p673).
+elderly(p746).
+elderly(p852).
+elderly(p97).
+
+% low_fare
+low_fare(p1).
+low_fare(p10).
+low_fare(p100).
+low_fare(p101).
+low_fare(p102).
+low_fare(p104).
+low_fare(p105).
+low_fare(p106).
+low_fare(p107).
+low_fare(p108).
+low_fare(p109).
+low_fare(p11).
+low_fare(p110).
+low_fare(p112).
+low_fare(p113).
+low_fare(p114).
+low_fare(p115).
+low_fare(p116).
+low_fare(p117).
+low_fare(p118).
+low_fare(p12).
+low_fare(p120).
+low_fare(p122).
+low_fare(p123).
+low_fare(p124).
+low_fare(p126).
+low_fare(p127).
+low_fare(p128).
+low_fare(p129).
+low_fare(p13).
+low_fare(p130).
+low_fare(p131).
+low_fare(p132).
+low_fare(p133).
+low_fare(p134).
+low_fare(p135).
+low_fare(p136).
+low_fare(p137).
+low_fare(p139).
+low_fare(p14).
+low_fare(p141).
+low_fare(p142).
+low_fare(p143).
+low_fare(p144).
+low_fare(p145).
+low_fare(p146).
+low_fare(p147).
+low_fare(p148).
+low_fare(p149).
+low_fare(p15).
+low_fare(p150).
+low_fare(p151).
+low_fare(p153).
+low_fare(p154).
+low_fare(p155).
+low_fare(p157).
+low_fare(p158).
+low_fare(p159).
+low_fare(p16).
+low_fare(p161).
+low_fare(p162).
+low_fare(p163).
+low_fare(p164).
+low_fare(p165).
+low_fare(p166).
+low_fare(p168).
+low_fare(p169).
+low_fare(p17).
+low_fare(p171).
+low_fare(p172).
+low_fare(p173).
+low_fare(p174).
+low_fare(p175).
+low_fare(p176).
+low_fare(p177).
+low_fare(p178).
+low_fare(p179).
+low_fare(p18).
+low_fare(p180).
+low_fare(p182).
+low_fare(p183).
+low_fare(p184).
+low_fare(p185).
+low_fare(p186).
+low_fare(p187).
+low_fare(p188).
+low_fare(p189).
+low_fare(p19).
+low_fare(p190).
+low_fare(p191).
+low_fare(p192).
+low_fare(p193).
+low_fare(p194).
+low_fare(p195).
+low_fare(p197).
+low_fare(p198).
+low_fare(p199).
+low_fare(p20).
+low_fare(p200).
+low_fare(p201).
+low_fare(p203).
+low_fare(p204).
+low_fare(p205).
+low_fare(p206).
+low_fare(p207).
+low_fare(p208).
+low_fare(p209).
+low_fare(p21).
+low_fare(p210).
+low_fare(p211).
+low_fare(p212).
+low_fare(p213).
+low_fare(p214).
+low_fare(p215).
+low_fare(p217).
+low_fare(p218).
+low_fare(p22).
+low_fare(p220).
+low_fare(p221).
+low_fare(p222).
+low_fare(p223).
+low_fare(p224).
+low_fare(p226).
+low_fare(p227).
+low_fare(p228).
+low_fare(p229).
+low_fare(p23).
+low_fare(p230).
+low_fare(p232).
+low_fare(p233).
+low_fare(p234).
+low_fare(p235).
+low_fare(p236).
+low_fare(p237).
+low_fare(p238).
+low_fare(p239).
+low_fare(p24).
+low_fare(p240).
+low_fare(p241).
+low_fare(p242).
+low_fare(p243).
+low_fare(p244).
+low_fare(p245).
+low_fare(p247).
+low_fare(p248).
+low_fare(p25).
+low_fare(p250).
+low_fare(p251).
+low_fare(p252).
+low_fare(p253).
+low_fare(p254).
+low_fare(p255).
+low_fare(p256).
+low_fare(p26).
+low_fare(p260).
+low_fare(p261).
+low_fare(p262).
+low_fare(p264).
+low_fare(p265).
+low_fare(p266).
+low_fare(p267).
+low_fare(p268).
+low_fare(p27).
+low_fare(p271).
+low_fare(p272).
+low_fare(p273).
+low_fare(p274).
+low_fare(p275).
+low_fare(p277).
+low_fare(p278).
+low_fare(p279).
+low_fare(p280).
+low_fare(p281).
+low_fare(p282).
+low_fare(p283).
+low_fare(p284).
+low_fare(p285).
+low_fare(p286).
+low_fare(p287).
+low_fare(p288).
+low_fare(p289).
+low_fare(p29).
+low_fare(p290).
+low_fare(p293).
+low_fare(p294).
+low_fare(p295).
+low_fare(p296).
+low_fare(p297).
+low_fare(p299).
+low_fare(p3).
+low_fare(p30).
+low_fare(p301).
+low_fare(p302).
+low_fare(p303).
+low_fare(p304).
+low_fare(p305).
+low_fare(p309).
+low_fare(p31).
+low_fare(p313).
+low_fare(p314).
+low_fare(p315).
+low_fare(p316).
+low_fare(p317).
+low_fare(p318).
+low_fare(p321).
+low_fare(p322).
+low_fare(p323).
+low_fare(p324).
+low_fare(p327).
+low_fare(p328).
+low_fare(p329).
+low_fare(p33).
+low_fare(p331).
+low_fare(p332).
+low_fare(p334).
+low_fare(p336).
+low_fare(p339).
+low_fare(p34).
+low_fare(p340).
+low_fare(p341).
+low_fare(p343).
+low_fare(p344).
+low_fare(p345).
+low_fare(p346).
+low_fare(p347).
+low_fare(p348).
+low_fare(p349).
+low_fare(p350).
+low_fare(p351).
+low_fare(p352).
+low_fare(p353).
+low_fare(p354).
+low_fare(p355).
+low_fare(p356).
+low_fare(p358).
+low_fare(p359).
+low_fare(p360).
+low_fare(p361).
+low_fare(p362).
+low_fare(p363).
+low_fare(p364).
+low_fare(p365).
+low_fare(p366).
+low_fare(p368).
+low_fare(p369).
+low_fare(p37).
+low_fare(p372).
+low_fare(p373).
+low_fare(p375).
+low_fare(p377).
+low_fare(p379).
+low_fare(p38).
+low_fare(p380).
+low_fare(p382).
+low_fare(p383).
+low_fare(p385).
+low_fare(p387).
+low_fare(p388).
+low_fare(p389).
+low_fare(p39).
+low_fare(p390).
+low_fare(p392).
+low_fare(p393).
+low_fare(p395).
+low_fare(p396).
+low_fare(p397).
+low_fare(p398).
+low_fare(p399).
+low_fare(p40).
+low_fare(p400).
+low_fare(p401).
+low_fare(p402).
+low_fare(p403).
+low_fare(p404).
+low_fare(p405).
+low_fare(p406).
+low_fare(p407).
+low_fare(p408).
+low_fare(p409).
+low_fare(p41).
+low_fare(p410).
+low_fare(p411).
+low_fare(p412).
+low_fare(p414).
+low_fare(p415).
+low_fare(p416).
+low_fare(p417).
+low_fare(p418).
+low_fare(p419).
+low_fare(p42).
+low_fare(p420).
+low_fare(p421).
+low_fare(p422).
+low_fare(p423).
+low_fare(p424).
+low_fare(p425).
+low_fare(p426).
+low_fare(p427).
+low_fare(p428).
+low_fare(p429).
+low_fare(p43).
+low_fare(p430).
+low_fare(p431).
+low_fare(p432).
+low_fare(p433).
+low_fare(p434).
+low_fare(p437).
+low_fare(p438).
+low_fare(p44).
+low_fare(p440).
+low_fare(p441).
+low_fare(p442).
+low_fare(p443).
+low_fare(p444).
+low_fare(p445).
+low_fare(p447).
+low_fare(p448).
+low_fare(p449).
+low_fare(p45).
+low_fare(p450).
+low_fare(p451).
+low_fare(p452).
+low_fare(p453).
+low_fare(p455).
+low_fare(p456).
+low_fare(p457).
+low_fare(p459).
+low_fare(p46).
+low_fare(p460).
+low_fare(p461).
+low_fare(p462).
+low_fare(p463).
+low_fare(p464).
+low_fare(p465).
+low_fare(p466).
+low_fare(p467).
+low_fare(p468).
+low_fare(p469).
+low_fare(p47).
+low_fare(p470).
+low_fare(p471).
+low_fare(p472).
+low_fare(p473).
+low_fare(p474).
+low_fare(p475).
+low_fare(p477).
+low_fare(p478).
+low_fare(p479).
+low_fare(p48).
+low_fare(p480).
+low_fare(p481).
+low_fare(p482).
+low_fare(p483).
+low_fare(p484).
+low_fare(p486).
+low_fare(p488).
+low_fare(p489).
+low_fare(p49).
+low_fare(p490).
+low_fare(p491).
+low_fare(p492).
+low_fare(p493).
+low_fare(p494).
+low_fare(p495).
+low_fare(p496).
+low_fare(p498).
+low_fare(p5).
+low_fare(p50).
+low_fare(p500).
+low_fare(p501).
+low_fare(p502).
+low_fare(p503).
+low_fare(p504).
+low_fare(p507).
+low_fare(p508).
+low_fare(p509).
+low_fare(p51).
+low_fare(p511).
+low_fare(p512).
+low_fare(p513).
+low_fare(p515).
+low_fare(p516).
+low_fare(p517).
+low_fare(p518).
+low_fare(p519).
+low_fare(p52).
+low_fare(p520).
+low_fare(p522).
+low_fare(p523).
+low_fare(p525).
+low_fare(p526).
+low_fare(p527).
+low_fare(p529).
+low_fare(p530).
+low_fare(p531).
+low_fare(p532).
+low_fare(p533).
+low_fare(p534).
+low_fare(p535).
+low_fare(p536).
+low_fare(p537).
+low_fare(p539).
+low_fare(p54).
+low_fare(p540).
+low_fare(p542).
+low_fare(p543).
+low_fare(p544).
+low_fare(p546).
+low_fare(p547).
+low_fare(p548).
+low_fare(p549).
+low_fare(p550).
+low_fare(p552).
+low_fare(p553).
+low_fare(p554).
+low_fare(p555).
+low_fare(p556).
+low_fare(p557).
+low_fare(p56).
+low_fare(p560).
+low_fare(p561).
+low_fare(p562).
+low_fare(p563).
+low_fare(p564).
+low_fare(p565).
+low_fare(p566).
+low_fare(p567).
+low_fare(p568).
+low_fare(p569).
+low_fare(p57).
+low_fare(p570).
+low_fare(p571).
+low_fare(p573).
+low_fare(p574).
+low_fare(p575).
+low_fare(p576).
+low_fare(p577).
+low_fare(p579).
+low_fare(p58).
+low_fare(p580).
+low_fare(p581).
+low_fare(p583).
+low_fare(p584).
+low_fare(p585).
+low_fare(p587).
+low_fare(p589).
+low_fare(p59).
+low_fare(p590).
+low_fare(p591).
+low_fare(p593).
+low_fare(p594).
+low_fare(p595).
+low_fare(p596).
+low_fare(p597).
+low_fare(p598).
+low_fare(p599).
+low_fare(p6).
+low_fare(p60).
+low_fare(p601).
+low_fare(p602).
+low_fare(p603).
+low_fare(p604).
+low_fare(p605).
+low_fare(p606).
+low_fare(p607).
+low_fare(p608).
+low_fare(p609).
+low_fare(p61).
+low_fare(p611).
+low_fare(p612).
+low_fare(p613).
+low_fare(p614).
+low_fare(p615).
+low_fare(p617).
+low_fare(p618).
+low_fare(p619).
+low_fare(p620).
+low_fare(p621).
+low_fare(p623).
+low_fare(p624).
+low_fare(p625).
+low_fare(p626).
+low_fare(p627).
+low_fare(p629).
+low_fare(p630).
+low_fare(p631).
+low_fare(p632).
+low_fare(p633).
+low_fare(p634).
+low_fare(p635).
+low_fare(p636).
+low_fare(p637).
+low_fare(p638).
+low_fare(p639).
+low_fare(p64).
+low_fare(p640).
+low_fare(p641).
+low_fare(p643).
+low_fare(p645).
+low_fare(p647).
+low_fare(p648).
+low_fare(p649).
+low_fare(p65).
+low_fare(p650).
+low_fare(p651).
+low_fare(p652).
+low_fare(p653).
+low_fare(p654).
+low_fare(p655).
+low_fare(p657).
+low_fare(p658).
+low_fare(p659).
+low_fare(p66).
+low_fare(p662).
+low_fare(p663).
+low_fare(p664).
+low_fare(p665).
+low_fare(p667).
+low_fare(p668).
+low_fare(p669).
+low_fare(p67).
+low_fare(p671).
+low_fare(p673).
+low_fare(p674).
+low_fare(p675).
+low_fare(p676).
+low_fare(p677).
+low_fare(p678).
+low_fare(p679).
+low_fare(p68).
+low_fare(p681).
+low_fare(p683).
+low_fare(p684).
+low_fare(p685).
+low_fare(p686).
+low_fare(p687).
+low_fare(p688).
+low_fare(p689).
+low_fare(p69).
+low_fare(p692).
+low_fare(p694).
+low_fare(p695).
+low_fare(p696).
+low_fare(p697).
+low_fare(p698).
+low_fare(p70).
+low_fare(p700).
+low_fare(p702).
+low_fare(p703).
+low_fare(p704).
+low_fare(p705).
+low_fare(p706).
+low_fare(p707).
+low_fare(p708).
+low_fare(p71).
+low_fare(p710).
+low_fare(p711).
+low_fare(p712).
+low_fare(p714).
+low_fare(p715).
+low_fare(p716).
+low_fare(p718).
+low_fare(p719).
+low_fare(p72).
+low_fare(p720).
+low_fare(p721).
+low_fare(p722).
+low_fare(p723).
+low_fare(p724).
+low_fare(p726).
+low_fare(p727).
+low_fare(p728).
+low_fare(p729).
+low_fare(p730).
+low_fare(p732).
+low_fare(p733).
+low_fare(p734).
+low_fare(p735).
+low_fare(p736).
+low_fare(p737).
+low_fare(p739).
+low_fare(p74).
+low_fare(p740).
+low_fare(p741).
+low_fare(p744).
+low_fare(p745).
+low_fare(p747).
+low_fare(p748).
+low_fare(p750).
+low_fare(p751).
+low_fare(p752).
+low_fare(p753).
+low_fare(p754).
+low_fare(p756).
+low_fare(p757).
+low_fare(p758).
+low_fare(p759).
+low_fare(p76).
+low_fare(p761).
+low_fare(p762).
+low_fare(p763).
+low_fare(p765).
+low_fare(p767).
+low_fare(p768).
+low_fare(p769).
+low_fare(p77).
+low_fare(p770).
+low_fare(p771).
+low_fare(p772).
+low_fare(p773).
+low_fare(p774).
+low_fare(p775).
+low_fare(p776).
+low_fare(p777).
+low_fare(p778).
+low_fare(p779).
+low_fare(p78).
+low_fare(p781).
+low_fare(p783).
+low_fare(p784).
+low_fare(p785).
+low_fare(p786).
+low_fare(p787).
+low_fare(p788).
+low_fare(p789).
+low_fare(p79).
+low_fare(p791).
+low_fare(p792).
+low_fare(p794).
+low_fare(p795).
+low_fare(p796).
+low_fare(p797).
+low_fare(p798).
+low_fare(p799).
+low_fare(p8).
+low_fare(p80).
+low_fare(p800).
+low_fare(p801).
+low_fare(p802).
+low_fare(p804).
+low_fare(p805).
+low_fare(p806).
+low_fare(p807).
+low_fare(p808).
+low_fare(p809).
+low_fare(p81).
+low_fare(p811).
+low_fare(p812).
+low_fare(p813).
+low_fare(p814).
+low_fare(p815).
+low_fare(p816).
+low_fare(p817).
+low_fare(p818).
+low_fare(p819).
+low_fare(p82).
+low_fare(p820).
+low_fare(p822).
+low_fare(p823).
+low_fare(p824).
+low_fare(p825).
+low_fare(p826).
+low_fare(p828).
+low_fare(p829).
+low_fare(p83).
+low_fare(p831).
+low_fare(p832).
+low_fare(p833).
+low_fare(p834).
+low_fare(p835).
+low_fare(p837).
+low_fare(p838).
+low_fare(p84).
+low_fare(p840).
+low_fare(p841).
+low_fare(p842).
+low_fare(p843).
+low_fare(p844).
+low_fare(p845).
+low_fare(p846).
+low_fare(p848).
+low_fare(p849).
+low_fare(p85).
+low_fare(p851).
+low_fare(p852).
+low_fare(p853).
+low_fare(p854).
+low_fare(p855).
+low_fare(p856).
+low_fare(p858).
+low_fare(p859).
+low_fare(p86).
+low_fare(p860).
+low_fare(p861).
+low_fare(p862).
+low_fare(p863).
+low_fare(p865).
+low_fare(p866).
+low_fare(p867).
+low_fare(p869).
+low_fare(p87).
+low_fare(p870).
+low_fare(p871).
+low_fare(p873).
+low_fare(p874).
+low_fare(p875).
+low_fare(p876).
+low_fare(p877).
+low_fare(p878).
+low_fare(p879).
+low_fare(p88).
+low_fare(p881).
+low_fare(p882).
+low_fare(p883).
+low_fare(p884).
+low_fare(p885).
+low_fare(p886).
+low_fare(p887).
+low_fare(p888).
+low_fare(p889).
+low_fare(p890).
+low_fare(p891).
+low_fare(p9).
+low_fare(p90).
+low_fare(p91).
+low_fare(p92).
+low_fare(p94).
+low_fare(p95).
+low_fare(p96).
+low_fare(p97).
+low_fare(p99).
+
+% high_fare
+high_fare(p103).
+high_fare(p111).
+high_fare(p119).
+high_fare(p121).
+high_fare(p125).
+high_fare(p138).
+high_fare(p140).
+high_fare(p152).
+high_fare(p156).
+high_fare(p160).
+high_fare(p167).
+high_fare(p170).
+high_fare(p181).
+high_fare(p196).
+high_fare(p2).
+high_fare(p202).
+high_fare(p216).
+high_fare(p219).
+high_fare(p225).
+high_fare(p231).
+high_fare(p246).
+high_fare(p249).
+high_fare(p257).
+high_fare(p258).
+high_fare(p259).
+high_fare(p263).
+high_fare(p269).
+high_fare(p270).
+high_fare(p276).
+high_fare(p28).
+high_fare(p291).
+high_fare(p292).
+high_fare(p298).
+high_fare(p300).
+high_fare(p306).
+high_fare(p307).
+high_fare(p308).
+high_fare(p310).
+high_fare(p311).
+high_fare(p312).
+high_fare(p319).
+high_fare(p32).
+high_fare(p320).
+high_fare(p325).
+high_fare(p326).
+high_fare(p330).
+high_fare(p333).
+high_fare(p335).
+high_fare(p337).
+high_fare(p338).
+high_fare(p342).
+high_fare(p35).
+high_fare(p357).
+high_fare(p36).
+high_fare(p367).
+high_fare(p370).
+high_fare(p371).
+high_fare(p374).
+high_fare(p376).
+high_fare(p378).
+high_fare(p381).
+high_fare(p384).
+high_fare(p386).
+high_fare(p391).
+high_fare(p394).
+high_fare(p4).
+high_fare(p413).
+high_fare(p435).
+high_fare(p436).
+high_fare(p439).
+high_fare(p446).
+high_fare(p454).
+high_fare(p458).
+high_fare(p476).
+high_fare(p485).
+high_fare(p487).
+high_fare(p497).
+high_fare(p499).
+high_fare(p505).
+high_fare(p506).
+high_fare(p510).
+high_fare(p514).
+high_fare(p521).
+high_fare(p524).
+high_fare(p528).
+high_fare(p53).
+high_fare(p538).
+high_fare(p541).
+high_fare(p545).
+high_fare(p55).
+high_fare(p551).
+high_fare(p558).
+high_fare(p559).
+high_fare(p572).
+high_fare(p578).
+high_fare(p582).
+high_fare(p586).
+high_fare(p588).
+high_fare(p592).
+high_fare(p600).
+high_fare(p610).
+high_fare(p616).
+high_fare(p62).
+high_fare(p622).
+high_fare(p628).
+high_fare(p63).
+high_fare(p642).
+high_fare(p644).
+high_fare(p646).
+high_fare(p656).
+high_fare(p660).
+high_fare(p661).
+high_fare(p666).
+high_fare(p670).
+high_fare(p672).
+high_fare(p680).
+high_fare(p682).
+high_fare(p690).
+high_fare(p691).
+high_fare(p693).
+high_fare(p699).
+high_fare(p7).
+high_fare(p701).
+high_fare(p709).
+high_fare(p713).
+high_fare(p717).
+high_fare(p725).
+high_fare(p73).
+high_fare(p731).
+high_fare(p738).
+high_fare(p742).
+high_fare(p743).
+high_fare(p746).
+high_fare(p749).
+high_fare(p75).
+high_fare(p755).
+high_fare(p760).
+high_fare(p764).
+high_fare(p766).
+high_fare(p780).
+high_fare(p782).
+high_fare(p790).
+high_fare(p793).
+high_fare(p803).
+high_fare(p810).
+high_fare(p821).
+high_fare(p827).
+high_fare(p830).
+high_fare(p836).
+high_fare(p839).
+high_fare(p847).
+high_fare(p850).
+high_fare(p857).
+high_fare(p864).
+high_fare(p868).
+high_fare(p872).
+high_fare(p880).
+high_fare(p89).
+high_fare(p93).
+high_fare(p98).
 
