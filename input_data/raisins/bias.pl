@@ -1,4 +1,4 @@
-max_vars(10).
+max_vars(8).
 max_body(10).
 
 head_pred(raisin_type,1).
