@@ -1,0 +1,93 @@
+{
+    "experiment_name": "exp1",
+    "data_limit": 10000,
+    "categories": {
+      "person_age": {
+        "labels": ["very_young", "young", "middle_aged", "senior"],
+        "thresholds": [25, 40, 60],
+        "exclude": false
+      },
+      "person_income": {
+        "labels": ["very_low_income", "low_income", "medium_income", "high_income"],
+        "thresholds": [25000, 50000, 100000],
+        "exclude": false
+      },
+      "credit_score": {
+        "labels": ["subprime_credit", "poor_credit", "fair_credit", "good_credit", "excellent_credit"],
+        "thresholds": [500, 600, 700, 750],
+        "exclude": false
+      },
+      "loan_amnt": {
+        "labels": ["very_small_loan", "small_loan", "medium_loan", "large_loan", "very_large_loan"],
+        "thresholds": [5000, 15000, 30000, 50000],
+        "exclude": false
+      },
+      "loan_percent_income": {
+        "labels": ["very_low_ratio", "low_ratio", "medium_ratio", "high_ratio", "very_high_ratio"],
+        "thresholds": [0.15, 0.25, 0.35, 0.45],
+        "exclude": false
+      },
+      "loan_int_rate": {
+        "labels": ["very_high_interest", "high_interest", "medium_high_interest", "medium_interest", "low_interest"],
+        "thresholds": [20, 15, 10, 5],
+        "exclude": false
+      },
+      "cb_person_cred_hist_length": {
+        "labels": ["short_history", "medium_history", "long_history"],
+        "thresholds": [2, 5],
+        "exclude": false
+      },
+      "person_emp_exp": {
+        "labels": ["junior_experience", "mid_experience", "senior_experience"],
+        "thresholds": [2, 5],
+        "exclude": false
+      }
+    },
+    "categorical_mappings": {
+      "person_education": {
+        "mapping": {
+          "High School": "high_school",
+          "Associate": "associate_degree",
+          "Bachelor": "bachelor_degree",
+          "Master": "master_degree",
+          "Doctorate": "doctorate"
+        },
+        "exclude": false
+      },
+      "loan_intent": {
+        "mapping": {
+          "DEBTCONSOLIDATION": "debt_consolidation",
+          "EDUCATION": "education_loan",
+          "MEDICAL": "medical_loan",
+          "PERSONAL": "personal_loan",
+          "VENTURE": "venture_capital",
+          "HOMEIMPROVEMENT": "home_improvement"
+        },
+        "exclude": false
+      }
+    },
+    "binary_categories": {
+      "person_gender": {
+        "labels": ["male", "female"],
+        "values": ["M", "F"],
+        "exclude": false
+      },
+      "previous_loan_defaults_on_file": {
+        "labels": ["has_default", "no_default"],
+        "values": ["Yes", "No"],
+        "exclude": false
+      },
+      "person_home_ownership": {
+        "labels": ["renter", "owner"],
+        "values": ["RENT", "OWN"],
+        "exclude": false
+      }
+    },
+    "popper_settings": {
+      "max_rules": 6,
+      "max_literals": 8,
+      "max_body": 8,
+      "max_vars": 8
+    }
+  }
+  
