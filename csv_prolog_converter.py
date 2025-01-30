@@ -41,8 +41,14 @@ for feature_name, interaction in feature_interactions.items():
     df[feature_name] = df.apply(lambda row: all(evaluate_condition(row, cond) for cond in interaction["conditions"]), axis=1)
 
 predicates = ["applicant"]
-for category in categories.values():
+category_constraints = []
+
+for category_name, category in categories.items():
     predicates.extend(category["labels"])
+    for i in range(len(category["labels"])):
+        for j in range(i + 1, len(category["labels"])):
+            category_constraints.append(f":- {category['labels'][i]}, {category['labels'][j]}.")
+
 for category in categorical_mappings.values():
     predicates.extend(category["mapping"].values())
 for category in binary_categories.values():
@@ -109,6 +115,10 @@ with open(bias_loan_path, "w") as bias_file:
     for pred in predicates:
         if pred != "applicant":
             bias_file.write(f"body_pred({pred},1).\n")
+
+    bias_file.write("\n% Category Constraints\n")
+    for constraint in category_constraints:
+        bias_file.write(constraint + "\n")
 
     bias_file.write("\n% Direction of predicates\n")
     bias_file.write(f"direction({classification_target},(in,)).\n")

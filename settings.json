@@ -1,16 +1,16 @@
 {
-    "experiment_name": "raisins",
+    "experiment_name": "loan_3",
     "data_limit": 900,
-    "data_settings_path": "data_settings/raisin_data_settings.json",
+    "data_settings_path": "data_settings/loan_data_settings.json",
     "popper_settings": {
-        "max_rules": 15,
-        "max_literals": 25,
-        "max_body": 20,
-        "max_vars": 15,
+        "max_rules": 2,
+        "max_literals": 4,
+        "max_body": 3,
+        "max_vars": 5,
         "max_examples": 100,
         "timeout": 1800,
         "show_stats": true,
         "debug": false,
-        "noisy":false
+        "noisy":true
     }
 }

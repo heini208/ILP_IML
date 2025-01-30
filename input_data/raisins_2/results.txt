@@ -1,0 +1,24 @@
+Tried 754 programs
+
+Precision:0.86 Recall:0.86 TP:386 FN:64 TN:386 FP:64 Size:4 MDL:132 --rules
+raisin_type(V0):- medium_Perimeter(V0).
+raisin_type(V0):- low_Perimeter(V0).
+
+
+===== Settings Used =====
+{
+    "experiment_name": "raisins_2",
+    "data_limit": 900,
+    "data_settings_path": "data_settings/raisin_data_settings.json",
+    "popper_settings": {
+        "max_rules": 2,
+        "max_literals": 4,
+        "max_body": 3,
+        "max_vars": 5,
+        "max_examples": 100,
+        "timeout": 1800,
+        "show_stats": true,
+        "debug": false,
+        "noisy": true
+    }
+}

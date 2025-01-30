@@ -1,23 +1,23 @@
-Tried 985 programs
+Tried 983 programs
 
 Precision:1.00 Recall:0.34 TP:155 FN:295 TN:450 FP:0 Size:71 MDL:366 --rules
-raisin_type(V0):- low_Area(V0),high_MinorAxisLength(V0).
-raisin_type(V0):- low_ConvexArea(V0),medium_Area(V0).
+raisin_type(V0):- high_MinorAxisLength(V0),low_Area(V0).
 raisin_type(V0):- medium_Perimeter(V0),high_Area(V0).
+raisin_type(V0):- medium_Area(V0),low_ConvexArea(V0).
 raisin_type(V0):- low_Extent(V0),medium_Eccentricity(V0),medium_MinorAxisLength(V0).
-raisin_type(V0):- medium_Extent(V0),high_Eccentricity(V0),low_MajorAxisLength(V0).
-raisin_type(V0):- low_ConvexArea(V0),medium_Perimeter(V0),medium_MinorAxisLength(V0).
-raisin_type(V0):- low_Area(V0),medium_Eccentricity(V0),medium_MajorAxisLength(V0).
-raisin_type(V0):- low_ConvexArea(V0),medium_Eccentricity(V0),medium_MinorAxisLength(V0).
-raisin_type(V0):- low_Extent(V0),low_Eccentricity(V0),low_MinorAxisLength(V0).
 raisin_type(V0):- low_Perimeter(V0),high_Extent(V0),medium_Eccentricity(V0).
-raisin_type(V0):- low_Area(V0),high_Extent(V0),medium_MinorAxisLength(V0).
-raisin_type(V0):- low_Eccentricity(V0),medium_Area(V0),medium_Perimeter(V0),low_MajorAxisLength(V0).
-raisin_type(V0):- low_Eccentricity(V0),medium_MajorAxisLength(V0),low_Extent(V0),high_Area(V0).
-raisin_type(V0):- medium_MajorAxisLength(V0),medium_Eccentricity(V0),high_MinorAxisLength(V0),medium_Extent(V0).
-raisin_type(V0):- low_Extent(V0),low_Eccentricity(V0),medium_Area(V0),medium_Perimeter(V0).
-raisin_type(V0):- medium_MajorAxisLength(V0),medium_MinorAxisLength(V0),high_Eccentricity(V0),medium_Extent(V0).
+raisin_type(V0):- low_Area(V0),medium_Eccentricity(V0),medium_MinorAxisLength(V0).
+raisin_type(V0):- high_Eccentricity(V0),medium_Extent(V0),low_MajorAxisLength(V0).
+raisin_type(V0):- medium_Perimeter(V0),low_ConvexArea(V0),medium_MinorAxisLength(V0).
+raisin_type(V0):- high_Extent(V0),low_ConvexArea(V0),medium_MinorAxisLength(V0).
+raisin_type(V0):- low_Area(V0),medium_Eccentricity(V0),medium_MajorAxisLength(V0).
+raisin_type(V0):- low_Eccentricity(V0),low_Extent(V0),low_MinorAxisLength(V0).
+raisin_type(V0):- high_Eccentricity(V0),medium_Extent(V0),medium_MajorAxisLength(V0),medium_MinorAxisLength(V0).
+raisin_type(V0):- low_Eccentricity(V0),low_Extent(V0),high_Area(V0),medium_MajorAxisLength(V0).
+raisin_type(V0):- medium_Extent(V0),high_MinorAxisLength(V0),medium_MajorAxisLength(V0),medium_Eccentricity(V0).
 raisin_type(V0):- low_Eccentricity(V0),high_Extent(V0),medium_Perimeter(V0),medium_MinorAxisLength(V0).
+raisin_type(V0):- medium_Area(V0),low_Eccentricity(V0),low_Extent(V0),medium_Perimeter(V0).
+raisin_type(V0):- medium_Area(V0),low_Eccentricity(V0),medium_Perimeter(V0),low_MajorAxisLength(V0).
 
 
 ===== Settings Used =====
@@ -26,7 +26,7 @@ raisin_type(V0):- low_Eccentricity(V0),high_Extent(V0),medium_Perimeter(V0),medi
     "data_limit": 900,
     "data_settings_path": "data_settings/raisin_data_settings.json",
     "popper_settings": {
-        "max_rules": 15,
+        "max_rules": 2,
         "max_literals": 25,
         "max_body": 20,
         "max_vars": 15,
