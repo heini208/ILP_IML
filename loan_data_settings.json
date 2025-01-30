@@ -1,4 +1,5 @@
 {
+    "csv_file_path": "loan_data.csv",
     "classification_column": "loan_status",
     "classification_target": "loan_approved",
     "categories": {

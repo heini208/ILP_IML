@@ -5,8 +5,8 @@ loan_approved(V0):- high_ratio(V0).
 loan_approved(V0):- medium_ratio(V0).
 loan_approved(V0):- very_high_ratio(V0).
 loan_approved(V0):- debt_consolidation(V0),no_default(V0).
-loan_approved(V0):- very_small_loan(V0),low_ratio(V0).
-loan_approved(V0):- no_default(V0),very_young(V0),home_improvement(V0).
+loan_approved(V0):- low_ratio(V0),very_small_loan(V0).
+loan_approved(V0):- home_improvement(V0),no_default(V0),very_young(V0).
 
 
 ===== Settings Used =====

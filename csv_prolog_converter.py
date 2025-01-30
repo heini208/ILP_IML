@@ -23,12 +23,12 @@ feature_interactions = data_settings.get("feature_interactions", {})
 input_data_dir = os.path.join("input_data", experiment_name)
 os.makedirs(input_data_dir, exist_ok=True)
 
-loan_file_path = "loan_data.csv"
+csv_file_path = data_settings["csv_file_path"]
 bk_loan_path = os.path.join(input_data_dir, "bk.pl")
 exs_loan_path = os.path.join(input_data_dir, "exs.pl")
 bias_loan_path = os.path.join(input_data_dir, "bias.pl")
 
-df = pd.read_csv(loan_file_path).head(data_limit)
+df = pd.read_csv(csv_file_path).head(data_limit)
 
 def evaluate_condition(row, condition):
     feature, operator, value = condition["feature"], condition["operator"], condition["value"]
