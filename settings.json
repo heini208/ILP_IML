@@ -1,10 +1,10 @@
 {
     "experiment_name": "exp1",
-    "data_limit": 10000,
+    "data_limit": 500,
     "categories": {
       "person_age": {
         "labels": ["very_young", "young", "middle_aged", "senior"],
-        "thresholds": [25, 40, 60],
+        "thresholds": [25, 35, 60],
         "exclude": false
       },
       "person_income": {
@@ -83,19 +83,28 @@
         "exclude": false
       }
     },
+    "feature_interactions": {
+    "high_risk": {
+        "conditions": [
+            {"feature": "person_income", "operator": "<", "value": 40000},
+            {"feature": "credit_score", "operator": "<", "value": 600}
+        ]
+    },
+    "low_risk": {
+        "conditions": [
+            {"feature": "person_income", "operator": ">", "value": 80000},
+            {"feature": "credit_score", "operator": ">", "value": 750}
+        ]
+    }
+    },
     "popper_settings": {
         "max_rules": 5,
-        "max_literals": 6,
-        "max_body": 6,
-        "max_vars": 6,
+        "max_literals": 5,
+        "max_body": 5,
+        "max_vars": 5,
         "timeout": 1800,
-        "noisy": true,
         "show_stats": true,
-        "eval_timeout": 0.005,
-        "batch_size": 10000,
-        "solver": "rc2",
-        "anytime_timeout": 10,
-        "debug": true
+        "debug": false
     }
   }
   

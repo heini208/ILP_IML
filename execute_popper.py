@@ -2,6 +2,7 @@ import json
 import os
 from popper.util import Settings
 from popper.loop import learn_solution
+from popper.util import format_prog 
 
 # Load settings.json
 with open("settings.json", "r") as f:
@@ -17,18 +18,11 @@ popper_settings = settings_json.get("popper_settings", {})
 # Ensure defaults if not specified
 settings = Settings(
     kbpath=kbpath,
-    max_rules=popper_settings.get("max_rules", 6),
-    max_literals=popper_settings.get("max_literals", 8),
-    max_body=popper_settings.get("max_body", 8),
-    max_vars=popper_settings.get("max_vars", 8),
+    max_rules=popper_settings.get("max_rules", 3),
+    max_literals=popper_settings.get("max_literals", 6),
     timeout=popper_settings.get("timeout", 1200),
     noisy=popper_settings.get("noisy", True),
     show_stats=popper_settings.get("show_stats", True),
-    eval_timeout=popper_settings.get("eval_timeout", 0.001),
-    batch_size=popper_settings.get("batch_size", 20000),
-    solver=popper_settings.get("solver", "rc2"),
-    anytime_solver=popper_settings.get("anytime_solver", None),
-    anytime_timeout=popper_settings.get("anytime_timeout", 10),
     debug=popper_settings.get("debug", False),
 )
 
@@ -42,7 +36,7 @@ try:
         f.write(f"Tried {stats.total_programs} programs\n")
         
         if prog:
-            results = settings.get_prog_string(prog)
+            results = format_prog(prog)  # Corrected function to format the program
             f.write(f"\nLearned Program:\n{results}\n")
             f.write(f"\nScore: {score}\n")
             print(f"Results saved in {results_file}")
@@ -56,7 +50,7 @@ try:
         f.write(json.dumps(settings_json, indent=4))
 
 except Exception as e:
-    error_message = f"⚠️ Popper Crashed with Error: {e}"
+    error_message = f"Popper Crashed with Error: {e}"
     print(error_message)
     
     # Save error message to the results file

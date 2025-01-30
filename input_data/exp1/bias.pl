@@ -1,7 +1,5 @@
-max_rules(6).
-max_literals(8).
-max_body(8).
-max_vars(8).
+max_vars(5).
+max_body(5).
 
 head_pred(approved,1).
 
@@ -56,6 +54,8 @@ body_pred(has_default,1).
 body_pred(no_default,1).
 body_pred(renter,1).
 body_pred(owner,1).
+body_pred(high_risk,1).
+body_pred(low_risk,1).
 
 % Type Definitions
 type(approved, (person,)).
@@ -110,6 +110,8 @@ type(has_default, (person,)).
 type(no_default, (person,)).
 type(renter, (person,)).
 type(owner, (person,)).
+type(high_risk, (person,)).
+type(low_risk, (person,)).
 
 % Directions
 direction(approved, (in,)).
@@ -164,3 +166,5 @@ direction(has_default, (in,)).
 direction(no_default, (in,)).
 direction(renter, (in,)).
 direction(owner, (in,)).
+direction(high_risk, (in,)).
+direction(low_risk, (in,)).
