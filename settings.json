@@ -1,6 +1,6 @@
 {
-    "experiment_name": "exp1",
-    "data_limit": 500,
+    "experiment_name": "correlation_excludes_2",
+    "data_limit": 20000,
     "categories": {
       "person_age": {
         "labels": ["very_young", "young", "middle_aged", "senior"],
@@ -10,12 +10,12 @@
       "person_income": {
         "labels": ["very_low_income", "low_income", "medium_income", "high_income"],
         "thresholds": [25000, 50000, 100000],
-        "exclude": false
+        "exclude": true
       },
       "credit_score": {
         "labels": ["subprime_credit", "poor_credit", "fair_credit", "good_credit", "excellent_credit"],
         "thresholds": [500, 600, 700, 750],
-        "exclude": false
+        "exclude": true
       },
       "loan_amnt": {
         "labels": ["very_small_loan", "small_loan", "medium_loan", "large_loan", "very_large_loan"],
@@ -35,12 +35,12 @@
       "cb_person_cred_hist_length": {
         "labels": ["short_history", "medium_history", "long_history"],
         "thresholds": [2, 5],
-        "exclude": false
+        "exclude": true
       },
       "person_emp_exp": {
         "labels": ["junior_experience", "mid_experience", "senior_experience"],
         "thresholds": [2, 5],
-        "exclude": false
+        "exclude": true
       }
     },
     "categorical_mappings": {
@@ -98,10 +98,10 @@
     }
     },
     "popper_settings": {
-        "max_rules": 5,
-        "max_literals": 5,
-        "max_body": 5,
-        "max_vars": 5,
+        "max_rules": 3,
+        "max_literals": 9,
+        "max_body": 6,
+        "max_vars": 6,
         "timeout": 1800,
         "show_stats": true,
         "debug": false
