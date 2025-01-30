@@ -1,0 +1,102 @@
+{
+    "csv_file_path": "data_sets/raisin_data.csv",
+    "classification_column": "Class",
+    "classification_target": "raisin_type",
+    "classification_target_value": "Kecimen",
+    "categories": {
+        "Area": {
+            "labels": [
+                "low_Area",
+                "medium_Area",
+                "high_Area"
+            ],
+            "thresholds": [
+                59348.0,
+                78902.0,
+                105028.25
+            ],
+            "exclude": false
+        },
+        "MajorAxisLength": {
+            "labels": [
+                "low_MajorAxisLength",
+                "medium_MajorAxisLength",
+                "high_MajorAxisLength"
+            ],
+            "thresholds": [
+                345.44289779999997,
+                407.80395115,
+                494.187013975
+            ],
+            "exclude": false
+        },
+        "MinorAxisLength": {
+            "labels": [
+                "low_MinorAxisLength",
+                "medium_MinorAxisLength",
+                "high_MinorAxisLength"
+            ],
+            "thresholds": [
+                219.111126475,
+                247.84840865,
+                279.8885746
+            ],
+            "exclude": false
+        },
+        "Eccentricity": {
+            "labels": [
+                "low_Eccentricity",
+                "medium_Eccentricity",
+                "high_Eccentricity"
+            ],
+            "thresholds": [
+                0.7417662540000001,
+                0.798846044,
+                0.84257102375
+            ],
+            "exclude": false
+        },
+        "ConvexArea": {
+            "labels": [
+                "low_ConvexArea",
+                "medium_ConvexArea",
+                "high_ConvexArea"
+            ],
+            "thresholds": [
+                61513.25,
+                81651.0,
+                108375.75
+            ],
+            "exclude": false
+        },
+        "Extent": {
+            "labels": [
+                "low_Extent",
+                "medium_Extent",
+                "high_Extent"
+            ],
+            "thresholds": [
+                0.67086909675,
+                0.7073669579999999,
+                0.73499141725
+            ],
+            "exclude": false
+        },
+        "Perimeter": {
+            "labels": [
+                "low_Perimeter",
+                "medium_Perimeter",
+                "high_Perimeter"
+            ],
+            "thresholds": [
+                966.41075,
+                1119.509,
+                1308.38975
+            ],
+            "exclude": false
+        }
+    },
+    "categorical_mappings": {},
+    "binary_categories": {},
+    "feature_interactions": {}
+}

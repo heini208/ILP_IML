@@ -14,6 +14,7 @@ data_limit = min(max(settings.get("data_limit", 40000), 1), 40000)
 
 classification_column = data_settings["classification_column"]
 classification_target = data_settings["classification_target"]
+classification_target_value = data_settings.get("classification_target_value", 1)
 
 categories = {k: v for k, v in data_settings["categories"].items() if not v.get("exclude", False)}
 binary_categories = {k: v for k, v in data_settings["binary_categories"].items() if not v.get("exclude", False)}
@@ -32,6 +33,8 @@ df = pd.read_csv(csv_file_path).head(data_limit)
 
 def evaluate_condition(row, condition):
     feature, operator, value = condition["feature"], condition["operator"], condition["value"]
+    if isinstance(value, str):
+        value = f'"{value}"'
     return eval(f'row["{feature}"] {operator} {value}')
 
 for feature_name, interaction in feature_interactions.items():
@@ -66,13 +69,13 @@ for index, row in df.iterrows():
 
     for column, config in categorical_mappings.items():
         mapping = config["mapping"]
-        value = mapping.get(row[column])
+        value = mapping.get(str(row[column]))
         if value:
             bk_facts[value].append(f"{value}({applicant_id}).")
 
     for column, config in binary_categories.items():
         labels, values = config["labels"], config["values"]
-        label = labels[values.index(row[column])] if row[column] in values else None
+        label = labels[values.index(str(row[column]))] if str(row[column]) in values else None
         if label:
             bk_facts[label].append(f"{label}({applicant_id}).")
 
@@ -80,7 +83,7 @@ for index, row in df.iterrows():
         if row[feature_name]:
             bk_facts[feature_name].append(f"{feature_name}({applicant_id}).")
 
-    if row[classification_column] == 1:
+    if row[classification_column] == classification_target_value:
         exs_pos_entries.append(f"pos({classification_target}({applicant_id})).")
     else:
         exs_neg_entries.append(f"neg({classification_target}({applicant_id})).")
@@ -100,9 +103,21 @@ with open(bias_loan_path, "w") as bias_file:
         bias_file.write(f"max_vars({settings['popper_settings']['max_vars']}).\n")
     if "max_body" in settings["popper_settings"]:
         bias_file.write(f"max_body({settings['popper_settings']['max_body']}).\n")
+    
     bias_file.write(f"\nhead_pred({classification_target},1).\n\n")
+
     for pred in predicates:
         if pred != "applicant":
             bias_file.write(f"body_pred({pred},1).\n")
+
+    bias_file.write("\n% Direction of predicates\n")
+    bias_file.write(f"direction({classification_target},(in,)).\n")
+    for pred in predicates:
+        bias_file.write(f"direction({pred},(in,)).\n")
+
+    bias_file.write("\n% Type definitions\n")
+    bias_file.write(f"type({classification_target},(applicant,)).\n")
+    for pred in predicates:
+        bias_file.write(f"type({pred},(applicant,)).\n")
 
 print(f"Prolog files saved in: {input_data_dir}\nGenerated: bk.pl, exs.pl, bias.pl")

@@ -1,3 +1,11 @@
+Tried 852 programs
+
+Precision:0.86 Recall:0.86 TP:386 FN:64 TN:386 FP:64 Size:4 MDL:132 --rules
+raisin_type(V0):- low_Perimeter(V0).
+raisin_type(V0):- medium_Perimeter(V0).
+
+
+===== Settings Used =====
 {
     "experiment_name": "raisins",
     "data_limit": 8000,
