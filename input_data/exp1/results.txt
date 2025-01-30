@@ -1,16 +1,13 @@
 Tried 3679 programs
 
-Learned Program:
-approved(V0):- debt_consolidation(V0),poor_credit(V0),no_default(V0).
-approved(V0):- no_default(V0),master_degree(V0),junior_experience(V0).
-approved(V0):- very_low_income(V0),no_default(V0).
+Precision:0.96 Recall:0.92 TP:259 FN:24 TN:205 FP:12 Size:19 MDL:55 --rules
 approved(V0):- very_high_ratio(V0).
 approved(V0):- low_interest(V0).
 approved(V0):- medium_ratio(V0).
-approved(V0):- home_improvement(V0),no_default(V0),renter(V0).
 approved(V0):- high_ratio(V0).
-
-Score: (264, 19, 204, 13, 23)
+approved(V0):- very_low_income(V0),no_default(V0).
+approved(V0):- junior_experience(V0),master_degree(V0),no_default(V0).
+approved(V0):- debt_consolidation(V0),poor_credit(V0),no_default(V0).
 
 
 ===== Settings Used =====
