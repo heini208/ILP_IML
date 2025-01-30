@@ -1,0 +1,26 @@
+Tried 1017 programs
+
+Precision:0.94 Recall:0.90 TP:254 FN:29 TN:202 FP:15 Size:16 MDL:60 --rules
+loan_approved(V0):- high_ratio(V0).
+loan_approved(V0):- medium_ratio(V0).
+loan_approved(V0):- very_high_ratio(V0).
+loan_approved(V0):- debt_consolidation(V0),no_default(V0).
+loan_approved(V0):- very_small_loan(V0),low_ratio(V0).
+loan_approved(V0):- no_default(V0),very_young(V0),home_improvement(V0).
+
+
+===== Settings Used =====
+{
+    "experiment_name": "nuggets_1",
+    "data_limit": 500,
+    "data_settings_path": "loan_data_settings.json",
+    "popper_settings": {
+        "max_rules": 3,
+        "max_literals": 9,
+        "max_body": 6,
+        "max_vars": 6,
+        "timeout": 1800,
+        "show_stats": true,
+        "debug": false
+    }
+}
